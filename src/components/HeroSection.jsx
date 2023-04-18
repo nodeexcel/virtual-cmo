@@ -10,7 +10,7 @@ function HeroSection() {
             <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
               
               <h1 class="text-blue-500 text-6xl bold title-font font-medium mb-4">
-                Discover how we can help your business grow
+                Discover how we can help your business groww
               </h1>
               
               <p class="leading-relaxed mt-[7%]  mb-4 text-blue-500">
