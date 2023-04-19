@@ -1,13 +1,13 @@
 import React from 'react'
+// import Routes from './components/AllRoutes/AllRoutes';
+import AllRoutes from './components/AllRoutes/AllRoutes';
+import {VerificationPage, Website} from './pages';
 
-import { Counter } from './components/Counter'
-import Navbar from './components/Navbar'
 
 function App() {
   return (
     <>
-      <Navbar/>
-
+     <AllRoutes/>
     </>
   )
 }

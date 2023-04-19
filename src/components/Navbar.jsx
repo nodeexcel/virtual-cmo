@@ -5,13 +5,11 @@ import HeroSection from "./HeroSection";
 function Navbar() {
   return (
     <>
-    <div>
       <header>
         <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
           <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <a href="https://flowbite.com" class="flex items-center">
-              <Logo />
-            </a>
+            <Logo />
+
             <div class="flex items-center lg:order-2">
               <a
                 href="#"
@@ -32,7 +30,6 @@ function Navbar() {
                 aria-controls="mobile-menu-2"
                 aria-expanded="false"
               >
-                
                 <svg
                   class="w-6 h-6"
                   fill="currentColor"
@@ -101,11 +98,8 @@ function Navbar() {
           </div>
         </nav>
       </header>
-      
-    </div>
-    <div>
-      <HeroSection/>
-    </div>
+
+      <HeroSection />
     </>
   );
 }
