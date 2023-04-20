@@ -12,7 +12,7 @@ export function LeftVerticleImg({ img, children }) {
   return (
     <>
       {children}
-      <img className="text-center items-center justify-center mt-[15%]" src={img} />
+      <img className="text-center items-center justify-center mt-[15%] w-full h-auto" src={img} width="100%" height="auto" />
     </>
   );
 }

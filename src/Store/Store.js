@@ -1,9 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import Counter from "./reducer/Counter";
+import Website from "./reducer/website.slice";
 
 const store = configureStore({
     reducer:{
-        Counter
+       
+        Website
+
+        
     }
 });
 

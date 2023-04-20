@@ -1,15 +1,10 @@
-import React from 'react'
-// import Routes from './components/AllRoutes/AllRoutes';
-import AllRoutes from './components/AllRoutes/AllRoutes';
-import {VerificationPage, Website} from './pages';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import AllRoutes from "./AllRoutes";
 
-
-function App() {
-  return (
-    <>
-     <AllRoutes/>
-    </>
-  )
-}
-
-export default App
+const App = () => (
+  <BrowserRouter>
+    <AllRoutes />
+  </BrowserRouter>
+);
+export default App;
