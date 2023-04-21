@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/Frame7.png";
 import Logo from "../components/common/logo";
+import { useNavigate } from "react-router-dom";
 import {
   LeftVerticleImg,
   VerificationContainer,
@@ -10,14 +11,16 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { setUrl } from "../Store/reducer/website.slice";
 
-
 function Website() {
   const url = useSelector((state) => state?.WebsiteSlice?.url);
   const dispatch = useDispatch();
-  const WebsiteHandler=(e)=>{
+  const WebsiteHandler = (e) => {
     dispatch(setUrl(e.target.value));
-  }
-  
+  };
+  const navigate = useNavigate();
+  const LoaderHandler = () => {
+    navigate("/loader");
+  };
   return (
     <div>
       <section className="text-gray-600 body-font">
@@ -40,16 +43,19 @@ function Website() {
                 </h2>
               </div>
 
-              <div className="lg:pl-40 mt-[5%]">
+              <div className="lg:pl-40 mt-[2%]">
                 <input
                   value={url}
                   type="text"
-                  className="border-b w-[180%] mt-[10%] border-black 4px focus:outline-none focus:border-black"
-                  
+                  className="border-b w-[270%] mt-[10%] border-black 4px focus:outline-none focus:border-black"
+                  onChange={WebsiteHandler}
                 />
               </div>
               <div className="items-center mt-[5%] lg:pl-[40%]">
-                <button className="mt-3 w-[200%] mx-auto justify-center align-center h-[100%] text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg" >
+                <button
+                  className="mt-3 w-[200%] mx-auto justify-center align-center h-[100%] text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
+                  onClick={LoaderHandler}
+                >
                   Next
                   <svg
                     fill="none"

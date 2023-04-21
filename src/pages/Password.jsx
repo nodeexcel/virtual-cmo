@@ -2,24 +2,23 @@ import React from "react";
 import logo from "../assets/Frame4.png";
 import Logo from "../components/common/logo";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import { setPassword } from "../Store/reducer/password.slice";
 import {
   LeftVerticleImg,
   VerificationContainer,
 } from "../components/verification";
 
-
 function Password() {
   const password = useSelector((state) => state?.PasswordSlice?.password);
   const dispatch = useDispatch();
-  const PasswordHandler =(e)=>{
+  const PasswordHandler = (e) => {
     dispatch(setPassword(e.target.value));
-  }
-  const navigate =useNavigate();
-  const WebSiteHandler =()=>{
-    navigate('/website')
-  }
+  };
+  const navigate = useNavigate();
+  const WebSiteHandler = () => {
+    navigate("/website");
+  };
   return (
     <div>
       <section className="text-gray-600 body-font">
@@ -36,14 +35,17 @@ function Password() {
                 </h2>
               </div>
               <div className="flex items-center mt-9 lg:pl-40">
-                <h1 className="leading-relaxed font-bold text-base"> Password</h1>
+                <h1 className="leading-relaxed font-bold text-base">
+                  {" "}
+                  Password
+                </h1>
               </div>
 
               <div className="lg:pl-40">
                 <input
                   type="password"
                   value={password}
-                  className="border-b w-[100%] mt-[5%] border-black focus:outline-none focus:border-black"
+                  className="border-b w-[130%] mt-[5%] border-black focus:outline-none focus:border-black"
                   onChange={PasswordHandler}
                 />
 
@@ -57,8 +59,11 @@ function Password() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto" >
-              <button className="mt-3 w-[200%] h-[100%] text-sm mx-auto justify-center align-center text-center  text-slate-50 inline-flex items-center bg-blue-500 rounded-lg" onClick={WebSiteHandler}>
+            <div className="mx-auto">
+              <button
+                className="mt-3 w-[200%] h-[100%] text-sm mx-auto justify-center align-center text-center  text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
+                onClick={WebSiteHandler}
+              >
                 Next
                 <svg
                   fill="none"

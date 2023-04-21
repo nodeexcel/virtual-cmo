@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/Frame3.png";
 import Logo from "../components/common/logo";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setCode } from "../Store/reducer/verificationpage.slice";
 import {
@@ -12,14 +12,15 @@ import {
 const EmailVerifyInput = () => {
   const code = useSelector((state) => state?.VerificationPageSlice?.code);
   const dispatch = useDispatch();
+
   const verficationHandler = (e) => {
     dispatch(setCode(e.target.value));
   };
-  const navigate =useNavigate();
-  const PassHandler=()=>{
-    navigate('/password')
-  }
-  
+  const navigate = useNavigate();
+  const PassHandler = () => {
+    navigate("/password");
+  };
+
   return (
     <>
       <div className="flex flex-col mb-10 lg:items-start items-center justify-center h-full">
@@ -48,7 +49,10 @@ const EmailVerifyInput = () => {
           </p>
         </div>
 
-        <button className="mt-[3%] w-[20%] h-[5%] mx-auto justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg" onClick={PassHandler}>
+        <button
+          className="mt-[3%] w-[20%] h-[5%] mx-auto justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
+          onClick={PassHandler}
+        >
           Next
           <svg
             fill="none"
