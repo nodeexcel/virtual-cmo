@@ -48,7 +48,7 @@ const EmailVerifyInput = () => {
           </p>
         </div>
 
-        <button className="mt-[3%] w-[20%] h-[5%] mx-auto justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg  "onClick={PassHandler}>
+        <button className="mt-[3%] w-[20%] h-[5%] mx-auto justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg" onClick={PassHandler}>
           Next
           <svg
             fill="none"
