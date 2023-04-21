@@ -17,10 +17,7 @@ function Website() {
   const WebsiteHandler=(e)=>{
     dispatch(setUrl(e.target.value));
   }
-  // const navigate =useNavigate();
-  // const LoadHandler=()=>{
-  //   navigate('/loader')
-  // }
+  
   return (
     <div>
       <section className="text-gray-600 body-font">
@@ -48,7 +45,7 @@ function Website() {
                   value={url}
                   type="text"
                   className="border-b w-[180%] mt-[10%] border-black 4px focus:outline-none focus:border-black"
-                  onChange={WebsiteHandler}
+                  
                 />
               </div>
               <div className="items-center mt-[5%] lg:pl-[40%]">
