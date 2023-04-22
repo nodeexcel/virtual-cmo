@@ -4,9 +4,12 @@ import AllRoutes from "./AllRoutes";
 import Dashboard from "./components/Dashboard";
 
 const App = () => (
-  <BrowserRouter>
-    <AllRoutes />
-  </BrowserRouter>
+  // <BrowserRouter>
+  //   <AllRoutes />
+  // </BrowserRouter>
+  <>
+  <Dashboard/>
+  </>
   
 );
 export default App;

@@ -24,7 +24,7 @@ const VerificationPage = () => {
   };
   return (
     <>
-      <div className="flex flex-col mb-10 lg:items-start items-center justify-center h-full">
+      <div className="flex flex-col mb-10 lg:items-start items-center justify-center h-full w-full">
         <div className="items-center ">
           <h2 className=" text-4xl title-font lg:pl-44 flex justify-center text-center  mb-1 font-bold text-blue-500">
             Sign Up
@@ -43,12 +43,12 @@ const VerificationPage = () => {
               Signup with Facebook
             </button>
           </div>
-          <small className="dashed-or mt-[-5%] flex justify-center items-center">Or</small>
+          <small className="lg:pl-40 dashed-or mt-[-5%] flex justify-center text-center items-center">Or</small>
         </div>
 
         <div className="flex items-center mt-[17%] lg:pl-40">
           <h3 className="leading-relaxed font-bold text-base">
-            {" "}
+            
             Email Address
           </h3>
         </div>
@@ -57,13 +57,13 @@ const VerificationPage = () => {
           <input
             type="text"
             value={email}
-            className="border-b  w-[260%] mt-[10%] border-black focus:outline-none focus:border-black"
+            className="border-b  w-[245%] mt-[10%] border-black focus:outline-none focus:border-black"
             onChange={EmailHandler}
           />
         </div>
 
         <button
-          className="mt-[5%] w-[20%] h-[5%] mx-auto justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
+          className="mx-auto mt-[5%]  w-[20%] h-[5%]  justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
           onClick={VerifyHandler}
         >
           Verify email
