@@ -59,9 +59,9 @@ function Password() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto">
+            <div className="mx-auto ">
               <button
-                className="mt-3 w-[200%] h-[100%] text-sm mx-auto justify-center align-center text-center  text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
+                className="mt-3 w-[240%] h-[120%]  text-sm mx-auto flex justify-center text-center  text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
                 onClick={WebSiteHandler}
               >
                 Next

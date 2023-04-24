@@ -17,6 +17,7 @@ const AllRoutes = () => {
       <Route path="/website" element={<Website />} />
       <Route path="/loader" element={<Loader />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/dashboard/:id" element={<Dashboard />}  />
     </Routes>
   );
 };

@@ -99,7 +99,7 @@ function Loginpage() {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="container  flex flex-wrap h-screen">
+        <div className=" flex flex-wrap h-screen">
           <VerificationContainer classess={"bg-blue-500"}>
             <Logo color={"text-slate-50"} />
             <LeftVerticleImg img={logo}>
