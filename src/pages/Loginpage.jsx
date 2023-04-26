@@ -26,14 +26,14 @@ const VerificationPage = () => {
     <>
       <div className="flex flex-col mb-10 lg:items-start items-center justify-center h-full w-full">
         <div className="items-center ">
-          <h2 className=" text-4xl title-font lg:pl-44 flex justify-center text-center  mb-1 font-bold text-blue-500">
+          <h2 className=" text-4xl title-font lg:pl-44 md flex justify-center text-center  mb-1 font-bold text-blue-500">
             Sign Up
           </h2>
           
-          <p className="leading-relaxed items-center  lg:pl-44 text-base">
-            Porem ipsum dolar sit amet, consectetur adipiscing elit. Nunc
+          <p className="leading-relaxed items-center md:items-center lg:pl-44 md:pl-24 text-base">
+            lorem ipsum dolar sit amet, consectetur adipiscing elit. Nunc
           </p>
-          <div className="lg:pl-38 h-[100%] w-[120%]">
+          <div className="lg:pl-38 md:pl-38 h-[100%] w-[120%]">
             <button className="mt-[3%] w-[60%] h-[30%] font-bold   m-auto flex justify-center text-center align-center text-md text-slate-50  items-center bg-blue-500 rounded-lg">
               <BsGoogle className="mr-6 text-black" />
               Signup with Google
@@ -43,10 +43,10 @@ const VerificationPage = () => {
               Signup with Facebook
             </button>
           </div>
-          <small className="lg:pl-40 dashed-or mt-[-5%] flex justify-center text-center items-center">Or</small>
+          <small className="lg:pl-40 dashed-or mt-[-5%] md:mt-[-5%] flex justify-center text-center items-center">Or</small>
         </div>
 
-        <div className="flex items-center mt-[17%] lg:pl-40">
+        <div className="flex items-center mt-[17%]  lg:pl-40 md:pl-5">
           <h3 className="leading-relaxed font-bold text-base">
             
             Email Address
@@ -63,7 +63,7 @@ const VerificationPage = () => {
         </div>
 
         <button
-          className="mx-auto mt-[5%]  w-[20%] h-[5%]  justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
+          className="mx-auto mt-[5%] md:w-[20%] sm:w-[20%] w-[20%] h-[5%]  justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
           onClick={VerifyHandler}
         >
           Verify email
@@ -99,14 +99,14 @@ function Loginpage() {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className=" flex flex-wrap h-screen">
-          <VerificationContainer classess={"bg-blue-500"}>
+        <div className=" flex flex-wrap h-screen class md:m-auto">
+          <VerificationContainer classess={"bg-blue-500 sm:hidden md:hidden lg:block"}>
             <Logo color={"text-slate-50"} />
             <LeftVerticleImg img={logo}>
-              <ImgText />
+              <ImgText  />
             </LeftVerticleImg>
           </VerificationContainer>
-          <VerificationContainer>
+          <VerificationContainer classess={'sm:m-auto md:m-auto'}>
             <VerificationPage />
           </VerificationContainer>
         </div>

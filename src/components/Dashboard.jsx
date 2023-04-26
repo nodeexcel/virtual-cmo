@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../assets/Frame8.png";
-import Performance from "../assets/Frame9.png";
-import email from "../assets/Frame10.png";
-import social from "../assets/Frame11.png";
-import history from "../assets/Frame12.png";
-import analytics from "../assets/Frame13.png";
-import Marketing from "../assets/Frame14.png";
-import logo7 from "../assets/Frame15.png";
+import logo from "../assets/Logo.svg";
+import Performance from "../assets/Performance.svg";
+import email from "../assets/Email.svg";
+import social from "../assets/Social.svg";
+import history from "../assets/History.svg";
+import analytics from "../assets/Analytics.svg";
+import Marketing from "../assets/Marketing.svg";
+import logo7 from "../assets/Side.svg";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import Maincontent from "./Maincontent";
 
@@ -22,26 +22,32 @@ const leftNav = [
   {
     text: "Content Marketing",
     src: logo7,
+    href: "content-marketing"
   },
   {
     text: "Performance Marketing",
     src: logo7,
+    href:"performance-marketing"
   },
   {
     text: "Email Marketing",
     src: logo7,
+    href: "email-marketing"
   },
   {
     text: "Social Media Management",
     src: logo7,
+    href: "social-management"
   },
   {
     text: "History",
     src: logo7,
+    href: "history"
   },
   {
     text: "Analytics",
     src: logo7,
+    href: "analytics" 
   },
 ];
 const Contentmarketing = [

@@ -23,8 +23,8 @@ function Password() {
     <div>
       <section className="text-gray-600 body-font">
         <div className="container  flex flex-wrap h-screen  ">
-          <VerificationContainer classess={"bg-blue-500"}>
-            <Logo color={"text-slate-50"} />
+          <VerificationContainer classess={"bg-blue-500 sm:hidden md:hidden lg:block"}>
+            <Logo color={"text-slate-50 "} />
             <LeftVerticleImg img={logo} />
           </VerificationContainer>
           <div className="flex flex-col  lg:py-12   -mb-10 lg:w-1/2  lg:text-left text-center items-center justify-center h-full">
@@ -59,9 +59,9 @@ function Password() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto ">
+            <div className="mx-auto lg:pl-[22%]">
               <button
-                className="mt-3 w-[240%] h-[120%]  text-sm mx-auto flex justify-center text-center  text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
+                className="mt-3 w-[220%] h-[110%]  text-sm mx-auto flex justify-center text-center  text-slate-50 items-center bg-blue-500 rounded-lg"
                 onClick={WebSiteHandler}
               >
                 Next
