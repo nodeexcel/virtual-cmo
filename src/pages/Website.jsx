@@ -38,7 +38,7 @@ function Website() {
               </div>
               <div className="flex items-center mt-9 lg:pl-40">
                 <h2 className="leading-relaxed text-base">
-                  {" "}
+                  
                   Enter your website url here:
                 </h2>
               </div>
