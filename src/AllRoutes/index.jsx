@@ -6,7 +6,7 @@ import Password from '../pages/Password';
 import Website from '../pages/Website';
 import Loader from '../components/Loader'
 import Dashboard from "../components/Dashboard";
-import BlogsLoader from "../components/BlogsLoader";
+import BlogsLoader from "../components/Blogs/BlogsLoader";
 
 
 const AllRoutes = () => {

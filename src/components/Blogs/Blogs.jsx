@@ -17,12 +17,18 @@ export function BlogsCentre({ img, children }) {
     </>
   );
 }
-export function Loader({classess}) {
+export function Loader({classess,percent}) {
   return (
     <>
-      <div className={`w-[100%] h-[1.5%] bg-gray-200 rounded-lg border-3 mt-[10%] ring-1 ${classess}`} >
-        <div className="w-[10%] h-[100%] bg-blue-500 border-3 ring-1 rounded-lg" ></div><span>2% Completed</span>
+    <div className=" flex items-center justify-between border-1">
+      <div className={` h-4 bg-gray-200 rounded-lg flex justify-between w-[80%] border-3 ring-1 ${classess}`} >
+        <div className={`w-[${percent}%] h-[100%] bg-green-500 border-3 ring-1 rounded-lg w-[80%] `} ></div>
       </div>
+      <div className="text-green-500 text-md w-[20%] ml-[2%]">
+        <p>{percent}%</p>
+        <p>Completed</p>
+      </div>
+    </div>
     </>
   );
 }
