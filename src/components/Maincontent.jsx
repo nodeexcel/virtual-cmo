@@ -19,7 +19,7 @@ const Maincontent = () => {
      
      <section class="text-gray-600 w-full body-font">
   <div class=" px-5 py-24 mx-auto w-full content_image">
-    <div class="flex justify-center text-center">
+    <div class="flex justify-center text-center mt-[5%]">
       <div class="lg:w-full md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
           <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={dashboard1}/>
@@ -33,7 +33,7 @@ const Maincontent = () => {
        
       </div>
       </div>
-    <div class="flex mt-[15%]">
+    <div class="flex mt-[10%]">
 
       <div class="lg:w-full md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">

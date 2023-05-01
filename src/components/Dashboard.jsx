@@ -117,7 +117,7 @@ const Inner = () => {
             >
               <div class="min-w-0 ">
                 <a
-                  class="text-md flex text-black truncate "
+                  class="text-md flex text-black truncate"
                   href={`${data.href}`}
                 >
                   {data.text}

@@ -11,7 +11,7 @@ import Dashboard from "../components/Dashboard";
 const AllRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Loginpage />} />
+      <Route exact path="/" element={<Loginpage />} />
       <Route path='/verificationpage' element={<VerificationPage/>}/>
       <Route path="/password" element={<Password />} />
       <Route path="/website" element={<Website />} />
