@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+.Loader{
+  width: 100%;
+  height: 10px;
+ border-radius: 10px;
+ border: 1px solid black;
+
+}
+.subloader{
+  width: 10%;
+  height: 10px;
+  background-color: blue;
+
+}

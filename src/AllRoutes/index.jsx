@@ -6,6 +6,7 @@ import Password from '../pages/Password';
 import Website from '../pages/Website';
 import Loader from '../components/Loader'
 import Dashboard from "../components/Dashboard";
+import BlogsLoader from "../components/BlogsLoader";
 
 
 const AllRoutes = () => {
@@ -18,6 +19,7 @@ const AllRoutes = () => {
       <Route path="/loader" element={<Loader />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/dashboard/:id" element={<Dashboard />}  />
+      <Route path="/blogsLoader" element={<BlogsLoader />}  />
     </Routes>
   );
 };

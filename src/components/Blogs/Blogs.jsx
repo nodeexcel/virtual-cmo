@@ -17,3 +17,12 @@ export function BlogsCentre({ img, children }) {
     </>
   );
 }
+export function Loader({classess}) {
+  return (
+    <>
+      <div className={`w-[100%] h-[1.5%] bg-gray-200 rounded-lg border-3 mt-[10%] ring-1 ${classess}`} >
+        <div className="w-[10%] h-[100%] bg-blue-500 border-3 ring-1 rounded-lg" ></div><span>2% Completed</span>
+      </div>
+    </>
+  );
+}
