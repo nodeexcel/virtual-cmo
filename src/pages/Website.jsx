@@ -25,7 +25,7 @@ function Website() {
     <div>
       <section className="text-gray-600 body-font">
         <div className="container  flex flex-wrap h-screen">
-          <VerificationContainer classess={"bg-blue-500"}>
+          <VerificationContainer classess={"bg-blue-500 sm:hidden md:hidden lg:block"}>
             <Logo color={"text-slate-50"} />
             <LeftVerticleImg img={logo} />
           </VerificationContainer>
@@ -51,9 +51,9 @@ function Website() {
                   onChange={WebsiteHandler}
                 />
               </div>
-              <div className="items-center mt-[5%] lg:pl-[40%]">
+              <div className="items-center mt-[5%] lg:pl-[55%]">
                 <button
-                  className="mt-3 w-[200%] mx-auto justify-center align-center h-[100%] text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
+                  className="mt-3 w-[200%] mx-auto justify-center align-center h-[110%] text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
                   onClick={LoaderHandler}
                 >
                   Next

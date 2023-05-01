@@ -11,14 +11,16 @@ import Dashboard from "../components/Dashboard";
 const AllRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Loginpage />} />
+      <Route exact path="/" element={<Loginpage />} />
       <Route path='/verificationpage' element={<VerificationPage/>}/>
       <Route path="/password" element={<Password />} />
       <Route path="/website" element={<Website />} />
       <Route path="/loader" element={<Loader />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/dashboard/:id" element={<Dashboard />}  />
     </Routes>
   );
 };
+
 
 export default AllRoutes;
