@@ -1,6 +1,6 @@
 import React from "react";
 
-export function BlogsContainer({ children, classess }) {
+export function SocialContainer({ children, classess }) {
   return (
     <div className={` lg:mb-0 overflow-hidden  ${classess}`}>
       {children}
@@ -9,7 +9,7 @@ export function BlogsContainer({ children, classess }) {
   );
 }
 
-export function BlogsCentre({ img, children }) {
+export function SocialCentre({ img, children }) {
   return (
     <>
       {children}
