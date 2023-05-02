@@ -19,8 +19,7 @@ const AllRoutes = () => {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Dashboard/>}/>
         <Route path="content-marketing" element={<BlogsPage/>}>
-          <Route path="blogs" element={<BlogsPage/>}/>
-          {/* <Route path="blogs" element={<BlogsIdea/>}/> */}
+          <Route index path="blogs" element={<BlogsPage/>}/>
         </Route>
       <Route path="performance-marketing"/>
       </Route>

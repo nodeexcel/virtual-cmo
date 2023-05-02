@@ -6,48 +6,53 @@ import social from "../assets/Social.svg";
 import history from "../assets/History.svg";
 import analytics from "../assets/Analytics.svg";
 import Marketing from "../assets/Marketing.svg";
+import DownArrow from "../assets/DownArrow.svg";
 import logo7 from "../assets/Side.svg";
 import { Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 
 const leftNavLogo = [
-  { src: Marketing, href: "content-marketing",text: "Content Marketing", },
-  { src: Performance, href: "performance-marketing", text: "Performance Marketing", },
-  { src: email, href: "email-marketing",text: "Email Marketing", },
-  { src: social, href: "social-management", text: "Social Media Management", },
-  { src: history, href: "history", text: "History", },
-  { src: analytics, href: "analytics", text: "Analytics", },
+  { src: Marketing, href: "content-marketing", text: "Content Marketing" },
+  {
+    src: Performance,
+    href: "performance-marketing",
+    text: "Performance Marketing",
+  },
+  { src: email, href: "email-marketing", text: "Email Marketing" },
+  { src: social, href: "social-management", text: "Social Media Management" },
+  { src: history, href: "history", text: "History" },
+  { src: analytics, href: "analytics", text: "Analytics" },
 ];
 const leftNav = [
   {
     text: "Content Marketing",
     src: logo7,
-    href: "content-marketing"
+    href: "content-marketing",
   },
   {
     text: "Performance Marketing",
     src: logo7,
-    href:"performance-marketing"
+    href: "performance-marketing",
   },
   {
     text: "Email Marketing",
     src: logo7,
-    href: "email-marketing"
+    href: "email-marketing",
   },
   {
     text: "Social Media Management",
     src: logo7,
-    href: "social-management"
+    href: "social-management",
   },
   {
     text: "History",
     src: logo7,
-    href: "history"
+    href: "history",
   },
   {
     text: "Analytics",
     src: logo7,
-    href: "analytics" 
+    href: "analytics",
   },
 ];
 const Contentmarketing = [
@@ -91,52 +96,57 @@ const Performancemarketing = [
   },
 ];
 
-
 const routes = {
-  "performance-marketing":Performancemarketing,
-  "content-marketing":Contentmarketing
-}
+  "performance-marketing": Performancemarketing,
+  "content-marketing": Contentmarketing,
+};
 
-const Inner = ({navOptions, setNavOptions}) => {
-  const navigate = useNavigate();
-  const params = useParams();
+const Inner = ({ navOptions, setNavOptions }) => {
+  const [selectedSection, setSelectedSection] = useState("Blogs");
 
-  const navigationHandler = (to) => {
-    navigate(to);
-  };
-
-  console.log(navOptions,"{}{]");
-//   const dataTobeMapped = routes[params.id] || leftNav
+  //   const dataTobeMapped = routes[params.id] || leftNav
 
   return (
-    <ul class="max-w-md justify-center text-center mt-[18%] ml-[5%]">
+    <ul className="max-w-md justify-center text-center mt-[18%] ml-[5%]">
       {navOptions.map((data, index) => {
         return (
-          <li class="pb-3" key={index}>
+          <li className="pb-3" key={index}>
             <div
-              class="flex mb-3 items-center justify-between pr-[8%]"
-            //   onClick={() => handleNavbar(index)}
+              className="flex mb-3 items-center justify-between pr-[8%]"
+              //   onClick={() => handleNavbar(index)}
             >
-              <div class="min-w-0 ">
+              <div className="min-w-0 ">
                 <a
-                  class="text-md flex text-black truncate"
-                //   href={`${data.href}`}
+                  className={`text-md flex text-black truncate ${
+                    data.text === selectedSection && "font-bold"
+                  }`}
+                  //   href={`${data.href}`}
                 >
                   {data.text}
                 </a>
               </div>
               <div className="">
-                <img
-                  src={data.src}
-                  className={"cursor-pointer"}
-                  onClick={() => {
-                    console.log(data.href);
-                    if(data?.href){
-                        setNavOptions(routes[data.href])
-                    }
-                    // navigationHandler(data.href)
-                }}
-                />
+                {data.text === selectedSection ? (
+                  <img
+                    src={DownArrow}
+                    className={"cursor-pointer"}
+                    onClick={() => {
+                      if (data?.href) {
+                        setNavOptions(routes[data.href]);
+                      }
+                    }}
+                  />
+                ) : (
+                  <img
+                    src={data.src}
+                    className={"cursor-pointer"}
+                    onClick={() => {
+                      if (data?.href) {
+                        setNavOptions(routes[data.href]);
+                      }
+                    }}
+                  />
+                )}
               </div>
             </div>
           </li>
@@ -146,16 +156,15 @@ const Inner = ({navOptions, setNavOptions}) => {
   );
 };
 
-
 const MainLayout = () => {
   const navigate = useNavigate();
-  const params = useParams(); 
+  const params = useParams();
   const navigationHandler = (to) => {
     navigate(`/${to}`);
   };
-  const [navOptions, setNavOptions] = useState(leftNav)
-  const [currentNav, setCureentNav] = useState("Dashboard")
-   return (
+  const [navOptions, setNavOptions] = useState(leftNav);
+  const [currentNav, setCureentNav] = useState("Dashboard");
+  return (
     <div>
       <div className="flex flex-col h-screen">
         <div className="flex flex-1">
@@ -164,15 +173,17 @@ const MainLayout = () => {
               <img className="mb-[240%]" src={logo} />
               {leftNavLogo.map((data, index) => {
                 return (
-                  <img 
+                  <img
                     src={data.src}
-                    className={`cursor-pointer  ${currentNav===data.text && 'bg-blue-900'}`} 
+                    className={`cursor-pointer  ${
+                      currentNav === data.text && "bg-blue-900"
+                    }`}
                     onClick={() => {
-                        if(data?.href && routes[data.href] ){
-                            setNavOptions(routes[data.href])
-                            navigationHandler(data.href)
-                        }
-                        setCureentNav(data.text)
+                      if (data?.href && routes[data.href]) {
+                        setNavOptions(routes[data.href]);
+                        navigationHandler(data.href);
+                      }
+                      setCureentNav(data.text);
                     }}
                     key={index}
                   />
@@ -181,7 +192,7 @@ const MainLayout = () => {
             </div>
           </div>
 
-          <div className="w-64 mr-[6%]   bg-slate-50">
+          <div className="w-64    bg-slate-50">
             <h1 className="  flex justify-center text-center font-bold mt-[42%] ">
               Company Name
             </h1>
@@ -191,7 +202,7 @@ const MainLayout = () => {
             </h1>
             <div className="mt-[10px]">
               <div className="container">
-                <Inner navOptions={navOptions} setNavOptions={setNavOptions}/>
+                <Inner navOptions={navOptions} setNavOptions={setNavOptions} />
                 <div className=" ml-[5%] mt-[20%]">
                   <h2 className="text-md item-center flex  text-center py-2">
                     Current Plan
@@ -206,7 +217,9 @@ const MainLayout = () => {
               </div>
             </div>
           </div>
-          <Outlet/>
+          <div className="w-[100%] bg-blue-50 flex items-center justify-center">
+            <Outlet />
+          </div>
         </div>
       </div>
     </div>
