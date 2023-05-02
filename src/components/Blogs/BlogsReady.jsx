@@ -3,7 +3,7 @@ import { BlogsCentre, Loader } from "./Blogs";
 
 import Blogs from "../../assets/BlogsReady.png";
 
-const BlogsReady = () => {
+const BlogsReady = ({setCurrScreen}) => {
   return (
     <div className="w-[65%] m-auto h-screen bg-slate-100  ">
       <div className="w-[100%] h-[13%] mt-[2%] py-8 px-8 text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
@@ -40,7 +40,7 @@ const BlogsReady = () => {
           <BlogsCentre img={Blogs}/>
         </div>
         <div className="flex m-auto mt-[4%] justify-center items-center">
-          <button class="bg-blue-500  rounded-lg py-2 px-2 mr-4 hover:bg-blue-500 text-slate-50 text-sm  hover:text-white  border border-blue-500 hover:border-transparent ">
+          <button onClick={() => {setCurrScreen(7)}} class="bg-blue-500  rounded-lg py-2 px-2 mr-4 hover:bg-blue-500 text-slate-50 text-sm  hover:text-white  border border-blue-500 hover:border-transparent ">
             Send this blog to email
           </button>
           <button class="bg-transparent  font-bold rounded-lg py-2 px-2 hover:bg-blue-500 text-blue-700 text-sm flex  hover:text-white   border border-blue-500 hover:border-transparent ">

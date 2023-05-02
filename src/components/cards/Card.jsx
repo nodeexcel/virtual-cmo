@@ -1,7 +1,7 @@
 import React from "react";
 import card from "../../assets/Youtube.png";
 
-export const CardItem = () => {
+export const CardItem = ({setCurrScreen}) => {
     return (
       <div>
         <div className="flex justify-between mt-[4%] mb-[2%]">
@@ -16,7 +16,7 @@ export const CardItem = () => {
           <h2 className="text-black text-sm">Traffic potential</h2>
           <h1 className="text-blue-500 text-sm">#100k</h1>
         </div>
-        <button class="bg-transparent  rounded-lg mt-[5%] font-bold hover:bg-blue-500 text-blue-700 text-sm flex  hover:text-white py-2 px-4  ring-1 border border-blue-500 hover:border-transparent ">
+        <button onClick={() =>(setCurrScreen(4))} class="bg-transparent  rounded-lg mt-[5%] font-bold hover:bg-blue-500 text-blue-700 text-sm flex  hover:text-white py-2 px-4  ring-1 border border-blue-500 hover:border-transparent ">
             Generate Blogs
           </button>
   
@@ -25,7 +25,7 @@ export const CardItem = () => {
   };
   
 
-export const Card = ({img,heading ,description}) => {
+export const Card = ({img,heading ,description, setCurrScreen}) => {
   return (
     <div>
       <section class="text-gray-600 body-font h-screen mx-auto">
@@ -47,7 +47,7 @@ export const Card = ({img,heading ,description}) => {
                 {description}
               </p>
               <div>
-                <CardItem/>
+                <CardItem setCurrScreen={setCurrScreen}/>
               </div>
             </div>
             <div class="p-1 border-4 mr-[1%] rounded-lg md:w-[30%] sm:mb-0 mb-6">
@@ -66,7 +66,7 @@ export const Card = ({img,heading ,description}) => {
               {description}
               </p>
               <div>
-                <CardItem/>
+                <CardItem setCurrScreen={setCurrScreen}/>
               </div>
             </div>
             <div class="p-1 border-4 rounded-lg md:w-[30%] sm:mb-0 mb-6">
@@ -84,7 +84,7 @@ export const Card = ({img,heading ,description}) => {
               {description}
               </p>
               <div>
-                <CardItem/>
+                <CardItem setCurrScreen={setCurrScreen}/>
               </div>
             </div>
           </div>
