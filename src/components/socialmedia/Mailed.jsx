@@ -5,8 +5,8 @@ import Blogs from "../../assets/BlogsEmail.png";
 
 const SocialMail = () => {
   return (
-    <div className="w-[65%] m-auto h-screen bg-slate-100 p-2 ">
-      <div className="w-[100%] h-[15%] mt-[2%] items-center justify-center text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
+    <div className="w-[65%] m-auto h-screen bg-slate-100 ">
+      <div className="w-[100%] h-[13%] mt-[1%] px-4 py-6 text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
         I have emailed the Social media Posts.
       </div>
       <Loader percent={100} />
