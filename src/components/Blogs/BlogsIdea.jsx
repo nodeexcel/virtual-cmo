@@ -5,15 +5,15 @@ import Blogs from "../../assets/BlogsIdea.png";
 
 const BlogsIdea = () => {
   return (
-    <div className="w-[65%] m-auto h-screen bg-slate-100 p-2 ">
+    <div className="w-[65%] m-auto h-screen bg-slate-100  ">
       <div className="w-[100%] h-[15%] mt-[2%] items-center justify-center text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
         Let me generate a few blogs topic for you
       </div>
 
       
 
-      <div className=" m-auto mt-[20%] h-screen items-center justify-center  w-[60%]">
-        <h1 className="text-blue-500 font-bold text-md flex item-center justify-center  -mt-[30%]">
+      <div className=" m-auto mt-[3%] h-screen items-center justify-center  w-[60%]">
+        <h1 className="text-blue-500 font-bold text-md flex item-center justify-center  ">
           Blogs
         </h1>
         <BlogsCentre img={Blogs} />

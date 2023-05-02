@@ -5,6 +5,7 @@ import BlogsIdea from "./components/Blogs/BlogsIdea";
 import BlogsLoader from "./components/Blogs/BlogsLoader";
 import BlogsMailed from "./components/Blogs/BlogsMailed";
 import BlogsTopic from "./components/Blogs/Blogstopic";
+import SocialMail from "./components/socialmedia/Mailed";
 
 
 const App = () => (
@@ -14,10 +15,11 @@ const App = () => (
     </BrowserRouter>
 
     */}
-    <BlogsMailed/>
+  <BlogsLoader/>
+  
+   {/* <BlogsIdea/> */}
     {/* <BlogsTopic/> */}
-    {/* <BlogsIdea/> */}
-    {/* <BlogsIdea/> */}
+    {/* <BlogsMailed/> */}
   </>
 );
 export default App;
