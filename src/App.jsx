@@ -1,18 +1,16 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import AllRoutes from "./AllRoutes";
-import BlogsIdea from "./components/BlogsIdea";
-import BlogsLoader from "./components/BlogsLoader";
 
 
 const App = () => (
   <>
-    {/* <BrowserRouter>
+    <BrowserRouter>
       <AllRoutes />
     </BrowserRouter>
-    */}
+   
     {/* <BlogsLoader/> */}
-    <BlogsIdea/>
+    {/* <BlogsIdea/> */}
   </>
 );
 export default App;
