@@ -8,15 +8,15 @@ import analytics from "../assets/Analytics.svg";
 import Marketing from "../assets/Marketing.svg";
 import logo7 from "../assets/Side.svg";
 import { Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
-// import Maincontent from "./Maincontent";
+import { useState } from "react";
 
 const leftNavLogo = [
-  { src: Marketing, href: "content-marketing" },
-  { src: Performance, href: "performance-marketing" },
-  { src: email, href: "email-marketing" },
-  { src: social, href: "social-management" },
-  { src: history, href: "history" },
-  { src: analytics, href: "analytics" },
+  { src: Marketing, href: "content-marketing",text: "Content Marketing", },
+  { src: Performance, href: "performance-marketing", text: "Performance Marketing", },
+  { src: email, href: "email-marketing",text: "Email Marketing", },
+  { src: social, href: "social-management", text: "Social Media Management", },
+  { src: history, href: "history", text: "History", },
+  { src: analytics, href: "analytics", text: "Analytics", },
 ];
 const leftNav = [
   {
@@ -97,28 +97,30 @@ const routes = {
   "content-marketing":Contentmarketing
 }
 
-const Inner = () => {
+const Inner = ({navOptions, setNavOptions}) => {
   const navigate = useNavigate();
   const params = useParams();
 
   const navigationHandler = (to) => {
     navigate(to);
   };
-  const dataTobeMapped = routes[params.id] || leftNav
+
+  console.log(navOptions,"{}{]");
+//   const dataTobeMapped = routes[params.id] || leftNav
 
   return (
     <ul class="max-w-md justify-center text-center mt-[18%] ml-[5%]">
-      {dataTobeMapped.map((data, index) => {
+      {navOptions.map((data, index) => {
         return (
           <li class="pb-3" key={index}>
             <div
               class="flex mb-3 items-center justify-between pr-[8%]"
-              onClick={() => handleNavbar(index)}
+            //   onClick={() => handleNavbar(index)}
             >
               <div class="min-w-0 ">
                 <a
                   class="text-md flex text-black truncate"
-                  href={`${data.href}`}
+                //   href={`${data.href}`}
                 >
                   {data.text}
                 </a>
@@ -127,7 +129,13 @@ const Inner = () => {
                 <img
                   src={data.src}
                   className={"cursor-pointer"}
-                  onClick={() => navigationHandler(data.href)}
+                  onClick={() => {
+                    console.log(data.href);
+                    if(data?.href){
+                        setNavOptions(routes[data.href])
+                    }
+                    // navigationHandler(data.href)
+                }}
                 />
               </div>
             </div>
@@ -145,7 +153,9 @@ const MainLayout = () => {
   const navigationHandler = (to) => {
     navigate(`/${to}`);
   };
-  return (
+  const [navOptions, setNavOptions] = useState(leftNav)
+  const [currentNav, setCureentNav] = useState("Dashboard")
+   return (
     <div>
       <div className="flex flex-col h-screen">
         <div className="flex flex-1">
@@ -156,8 +166,14 @@ const MainLayout = () => {
                 return (
                   <img 
                     src={data.src}
-                    className={`cursor-pointer  ${params.id===data.href && 'bg-blue-900'}`} 
-                    onClick={() => navigationHandler(data.href)}
+                    className={`cursor-pointer  ${currentNav===data.text && 'bg-blue-900'}`} 
+                    onClick={() => {
+                        if(data?.href && routes[data.href] ){
+                            setNavOptions(routes[data.href])
+                            navigationHandler(data.href)
+                        }
+                        setCureentNav(data.text)
+                    }}
                     key={index}
                   />
                 );
@@ -171,11 +187,11 @@ const MainLayout = () => {
             </h1>
             <h1 className="flex justify-center text-center mt-[10%] font-bold text-blue-700">
               {" "}
-              Dashboard
+              {currentNav}
             </h1>
             <div className="mt-[10px]">
               <div className="container">
-                <Inner />
+                <Inner navOptions={navOptions} setNavOptions={setNavOptions}/>
                 <div className=" ml-[5%] mt-[20%]">
                   <h2 className="text-md item-center flex  text-center py-2">
                     Current Plan
@@ -191,7 +207,6 @@ const MainLayout = () => {
             </div>
           </div>
           <Outlet/>
-          {/* <Maincontent/> */}
         </div>
       </div>
     </div>

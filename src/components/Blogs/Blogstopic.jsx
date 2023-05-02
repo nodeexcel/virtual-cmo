@@ -2,8 +2,14 @@ import React from "react";
 import { BlogsCentre, Loader } from "./Blogs";
 
 import Blogs from "../../assets/BlogsContent.png";
+import { useEffect } from "react";
 
-const BlogsTopic = () => {
+const BlogsTopic = ({setCurrScreen}) => {
+  useEffect(()=> {
+    setTimeout(()=>{
+      setCurrScreen(4)
+    },2000)
+  },[])
   return (
     <div className="w-[65%] m-auto h-screen bg-slate-100 p-2 ">
       <div className="w-[100%] h-[15%] mt-[2%] items-center justify-center text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">

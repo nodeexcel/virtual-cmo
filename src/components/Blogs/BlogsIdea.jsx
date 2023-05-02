@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const BlogsIdea = ({setCurrScreen}) => {
   useEffect(()=> {
     setTimeout(()=>{
-      // setCurrScreen(3)
+      setCurrScreen(3)
     },2000)
   },[])
   return (

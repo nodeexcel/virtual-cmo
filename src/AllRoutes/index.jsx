@@ -5,11 +5,11 @@ import VerificationPage from '../pages/VerificationPage';
 import Password from '../pages/Password';
 import Website from '../pages/Website';
 import Loader from '../components/Loader'
-import Dashboard from "../components/Dashboard";
+// import Dashboard from "../components/Dashboard";
 // import BlogsLoader from "../components/BlogsLoader";
 // import BlogsIdea from "../components/BlogsIdea";
 import MainLayout from "../layout/MainLayout";
-import Maincontent from "../components/Maincontent";
+import Dashboard from "../components/Dashboard";
 import BlogsPage from "../pages/BlogsPage";
 
 
@@ -17,7 +17,7 @@ const AllRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
-        <Route index element={<Maincontent/>}/>
+        <Route index element={<Dashboard/>}/>
         <Route path="content-marketing" element={<BlogsPage/>}>
           <Route path="blogs" element={<BlogsPage/>}/>
           {/* <Route path="blogs" element={<BlogsIdea/>}/> */}
