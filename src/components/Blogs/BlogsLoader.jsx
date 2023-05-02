@@ -9,8 +9,12 @@ import { BlogsCentre, Loader } from "./Blogs";
 
 const BlogsLoader = ({setCurrScreen}) => {
   return (
-    <div className="w-[65%] m-auto h-screen">
-      <Loader />
+    <div className="w-[65%] m-auto h-screen bg-slate-100  ">
+      <div className="w-[100%] h-[15%] mt-[2%] items-center justify-center text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
+        Let me generate a few blogs topic for you
+      </div>
+
+      <Loader percent={10} />
 
       <div className=" m-auto mt-[20%] h-screen  w-[60%]">
         <h1 className="text-blue-500 font-bold text-md  -mb-[10%]">Blogs</h1>
