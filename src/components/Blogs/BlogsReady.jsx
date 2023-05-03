@@ -39,7 +39,7 @@ const BlogsReady = () => {
           </h3>
           <BlogsCentre img={Blogs}/>
         </div>
-        <div className="flex m-auto mt-[4%] justify-center items-center">
+        <div className="flex m-auto mt-[4%] justify-center mb-[1%] items-center">
           <button class="bg-blue-500  rounded-lg py-2 px-2 mr-4 hover:bg-blue-500 text-slate-50 text-sm  hover:text-white  border border-blue-500 hover:border-transparent ">
             Send this blog to email
           </button>

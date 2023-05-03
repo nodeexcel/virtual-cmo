@@ -7,6 +7,9 @@ import BlogsMailed from "./components/Blogs/BlogsMailed";
 import BlogsReady from "./components/Blogs/BlogsReady";
 import BlogsTopic from "./components/Blogs/Blogstopic";
 import Blogstube from "./components/Blogs/Blogstube";
+import TableKeywords from "./components/keywords/TableKeywords";
+import Topkeywords from "./components/keywords/Topkeywords";
+import WorkingKeywords from "./components/keywords/WorkingKeywords";
 
 import SocialMail from "./components/socialmedia/Mailed";
 import SocialContent from "./components/socialmedia/SocialContent";
@@ -26,7 +29,10 @@ const App = () => (
     {/* <SocialMail/> */}
     {/* <SocialContent/> */}
    {/* <Blogstube/> */}
-   <BlogsReady/>
+   {/* <BlogsReady/> */}
+   {/* <Topkeywords/> */}
+   {/* <WorkingKeywords/> */}
+   <TableKeywords/>
   </>
 );
 export default App;
