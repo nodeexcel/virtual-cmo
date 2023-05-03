@@ -5,7 +5,7 @@ import Blogs from "../../assets/BlogsContent.png";
 
 const BlogsTopic = () => {
   return (
-    <div className="w-[65%] m-auto h-screen bg-slate-100  ">
+    <div className="w-[65%] m-auto h-screen bg-slate-50  ">
       <div className="w-[100%] h-[15%] mt-[2%] items-center justify-center text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
         Let me generate a few blogs topic for you
       </div>

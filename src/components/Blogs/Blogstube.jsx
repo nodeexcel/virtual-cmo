@@ -7,7 +7,7 @@ import {Card}  from "../cards/Card";
 
 const Blogstube = () => {
   return (
-    <div className="w-[65%] m-auto h-screen bg-slate-100  ">
+    <div className="w-[65%] m-auto h-screen bg-slate-50  ">
       <div className="w-[100%] h-[13%] mt-[2%] py-8 px-8 text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
         Here are the some blog topic that we can write about!
       </div>

@@ -5,7 +5,7 @@ import Blogs from "../../assets/SocialContent.png";
 
 const SocialContent = () => {
   return (
-    <div className="w-[65%] m-auto h-screen mt-[2%] bg-slate-100 ">
+    <div className="w-[65%] m-auto h-screen mt-[2%] bg-slate-50 ">
       
       <Loader percent={60} />
       
