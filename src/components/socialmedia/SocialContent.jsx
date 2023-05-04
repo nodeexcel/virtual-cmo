@@ -1,13 +1,14 @@
 import React from "react";
-import { SocialCentre,Loader } from "./SocialMedia";
+import { SocialCentre } from "./SocialMedia";
 
 import Blogs from "../../assets/SocialContent.png";
+import ProgressBar from "../common/ProgressBar";
 
 const SocialContent = () => {
   return (
-    <div className="w-[65%] m-auto h-screen mt-[2%] bg-slate-100 ">
+    <div className="w-[65%] m-auto h-screen mt-[2%] bg-slate-50 ">
       
-      <Loader percent={60} />
+      <ProgressBar percent={60} />
       
 
       <div className=" m-auto mt-[8%] h-screen items-center justify-center  w-[60%]">

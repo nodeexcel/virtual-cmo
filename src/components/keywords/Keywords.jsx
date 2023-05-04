@@ -1,12 +1,12 @@
 import React from "react";
 
-export function BlogsContainer({ children, classess }) {
+export function KeywordsContainer({ children, classess }) {
   return (
     <div className={` lg:mb-0 overflow-hidden  ${classess}`}>{children}</div>
   );
 }
 
-export function BlogsCentre({ img, children }) {
+export function KeywordsCentre({ img, children }) {
   return (
     <>
       {children}

@@ -9,9 +9,9 @@ import AdCopiesImage from "../assets/dashboard/adCopiesDashboard.svg"
 
 const Dashboard = () => {
   return (
-    <div className="w-[80%] flex rounded-lg bg-white">
+    <div className="w-[80%] flex rounded-lg bg-white mt-[8%]">
       <section class="text-gray-600 w-full body-font">
-        <div className="w-[100%] p-5 rounded-t-lg  bg-blue-200 flex ">
+        <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
           <h1 className="text-black text-2xl font-medium leading-9 text-left">
             I have scanned through your website and I’m good to start on the below marketing tasks.
           </h1>

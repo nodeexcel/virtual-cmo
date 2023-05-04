@@ -1,33 +1,40 @@
 import React from "react";
-import { BlogsCentre,Loader } from "./Blogs";
+import { BlogsCentre } from "./Blogs";
 
 import Blogs from "../../assets/BlogsEmail.png";
+import ArrowRight from "../../assets/ArrowRight.svg";
+import ProgressBar from "../common/ProgressBar";
 
 const BlogsMailed = () => {
   return (
-    <div className="w-[65%] m-auto h-screen bg-slate-50  ">
-      <div className="w-[100%] h-[13%] mt-[2%] py-4 px-4  text-md   m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
-        I have emailed the blog!
+    <div className="w-[80%] flex flex-col h-screen  rounded-lg bg-white mt-[8%]">
+      <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
+        <h1 className="text-black text-2xl font-medium leading-9 text-left">
+          I have emailed the blog!
+        </h1>
       </div>
-        <Loader percent={100} />
-      
+      <ProgressBar percent={10}/>
 
-      <div className=" m-auto mt-[3%] h-screen items-center justify-center  w-[60%]">
-       
+      <div className=" m-auto mt-[3%] h-screen items-center justify-center  w-[80%]">
         <BlogsCentre img={Blogs} />
-        <button class=" m-auto rounded-lg bg-blue-500 text-slate-50 font-semibold flex items-center justify-center hover:text-white py-2 px-4 ring-1 border border-blue-500 hover:border-transparent ">
-          Blogs Topic
-        </button>
+        <div className="flex justify-center">
+          <div className="p-2 px-4 bg-blue-600 self-center flex items-center justify-center  rounded-lg">
+            <p className="text-white mr-2 text-xs">Blogs Topic</p>
+            <img src={ArrowRight} height={15} width={15} />
+          </div>
+        </div>
         <div className="flex  mt-3 ">
-        <button class="bg-transparent text-sm font-bold py-3 px-2 m-auto rounded-lg mr-4 hover:bg-blue-500 text-blue-700  hover:text-white  border border-blue-500 hover:border-transparent ">
-          Generate Social Media Post
-        </button>
-        <button class="bg-transparent m-auto font-bold rounded-lg py-3 px-2 mr-4 hover:bg-blue-500 text-blue-700 text-sm flex items-center justify-center hover:text-white  border border-blue-500 hover:border-transparent ">
-          Generate Keywords
-        </button>
-        <button class="bg-transparent m-auto font-bold rounded-lg py-3 px-2 hover:bg-blue-500 text-blue-700 text-sm flex items-center justify-center hover:text-white   border border-blue-500 hover:border-transparent ">
-          Generate ads copies
-        </button>
+          <div className="p-2 px-4 mx-2 bg-white border-blue-600 border-2 self-center flex items-center justify-center  rounded-lg">
+            <p className="text-blue-600 mr-2 text-xs">
+              Generate Social Media post
+            </p>
+          </div>
+          <div className="p-2 px-4 mx-2 bg-white border-blue-600 border-2 self-center flex items-center justify-center  rounded-lg">
+            <p className="text-blue-600 mr-2 text-xs">Generate Keywords</p>
+          </div>
+          <div className="p-2 px-4 mx-2 bg-white border-blue-600 border-2 self-center flex items-center justify-center  rounded-lg">
+            <p className="text-blue-600  mr-2 text-xs">Generate ad copies</p>
+          </div>
         </div>
       </div>
     </div>

@@ -9,8 +9,10 @@ import Loader from '../components/Loader'
 // import BlogsLoader from "../components/BlogsLoader";
 // import BlogsIdea from "../components/BlogsIdea";
 import MainLayout from "../layout/MainLayout";
-import Dashboard from "../components/Dashboard";
+import Dashboard from "../pages/Dashboard";
 import BlogsPage from "../pages/BlogsPage";
+import KeywordsPage from "../pages/KeywordsPage";
+import GoogleAdsPage from "../pages/GoogleAdsPage";
 
 
 const AllRoutes = () => {
@@ -21,7 +23,11 @@ const AllRoutes = () => {
         <Route path="content-marketing" element={<BlogsPage/>}>
           <Route index path="blogs" element={<BlogsPage/>}/>
         </Route>
-      <Route path="performance-marketing"/>
+      <Route path="performance-marketing" >
+        <Route index  element={<KeywordsPage/>}/>
+        <Route index path="keywords" element={<KeywordsPage/>}/>
+        <Route path="google-ads" element={<GoogleAdsPage/>}/>
+      </Route>
       </Route>
       <Route  path="/onboarding" element={<Loginpage />} />
         <Route path='verificationpage' element={<VerificationPage/>}/>

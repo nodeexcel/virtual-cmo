@@ -77,22 +77,27 @@ const Performancemarketing = [
   {
     text: "Keywords",
     src: logo7,
-  },
-  {
-    text: "Ad Copies",
-    src: logo7,
+    path: "keywords",
   },
   {
     text: "Google Ads",
     src: logo7,
+    path: "google-ads",
+  },
+  {
+    text: "Ad Copies",
+    src: logo7,
+    path: "ad-copies",
   },
   {
     text: "Facebook Ads",
     src: logo7,
+    path: "facebook-ads",
   },
   {
     text: "History",
     src: logo7,
+    path: "history",
   },
 ];
 
@@ -102,7 +107,9 @@ const routes = {
 };
 
 const Inner = ({ navOptions, setNavOptions }) => {
-  const [selectedSection, setSelectedSection] = useState("Blogs");
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const [selectedSection, setSelectedSection] = useState();
 
   //   const dataTobeMapped = routes[params.id] || leftNav
 
@@ -134,6 +141,7 @@ const Inner = ({ navOptions, setNavOptions }) => {
                       if (data?.href) {
                         setNavOptions(routes[data.href]);
                       }
+                      navigate(`${pathname}/${data.path}`);
                     }}
                   />
                 ) : (
@@ -144,6 +152,8 @@ const Inner = ({ navOptions, setNavOptions }) => {
                       if (data?.href) {
                         setNavOptions(routes[data.href]);
                       }
+                      setSelectedSection(data.text);
+                      navigate(`${pathname}/${data.path}`);
                     }}
                   />
                 )}
@@ -170,7 +180,15 @@ const MainLayout = () => {
         <div className="flex flex-1">
           <div className="flex justify-center text-center item-center">
             <div className="bg-blue-500 w-16 h-screen">
-              <img className="mb-[240%]" src={logo} />
+              <img
+                className="mb-[240%]"
+                src={logo}
+                onClick={() => {
+                  navigate("/");
+                  setCureentNav("Dashboard");
+                  setNavOptions(leftNav);
+                }}
+              />
               {leftNavLogo.map((data, index) => {
                 return (
                   <img
@@ -202,7 +220,11 @@ const MainLayout = () => {
             </h1>
             <div className="mt-[10px]">
               <div className="container">
-                <Inner navOptions={navOptions} setNavOptions={setNavOptions} />
+                <Inner
+                  navOptions={navOptions}
+                  setNavOptions={setNavOptions}
+                  currentNav={currentNav}
+                />
                 <div className=" ml-[5%] mt-[20%]">
                   <h2 className="text-md item-center flex  text-center py-2">
                     Current Plan
