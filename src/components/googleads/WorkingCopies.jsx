@@ -2,7 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 
 import Blogs from "../../assets/WorkingCopies.png";
-import { GoogleCentre, GoogleLoader } from "./Googleads";
+import { GoogleCentre } from "./Googleads";
+import ProgressBar from "../common/ProgressBar"
 
 const WorkingCopies = ({setCurrScreen}) => {
   useEffect(() => {
@@ -14,7 +15,7 @@ const WorkingCopies = ({setCurrScreen}) => {
     <div className="w-[65%] m-auto h-screen bg-slate-50  ">
      
 
-      <GoogleLoader percent={50} />
+      <ProgressBar percent={50} />
 
       <div className=" m-auto mt-[4%] h-screen items-center justify-center  w-[60%]">
         

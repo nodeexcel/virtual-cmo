@@ -11,7 +11,7 @@ function KeywordsPage() {
     case 2:
       return <WorkingKeywords setCurrScreen={setCurrScreen} />;
     case 3:
-    return <TableKeywords setCurrScreen={setCurrScreen}/>;
+      return <TableKeywords setCurrScreen={setCurrScreen}/>;
     
     default:
       return <Topkeywords setCurrScreen={setCurrScreen} />;

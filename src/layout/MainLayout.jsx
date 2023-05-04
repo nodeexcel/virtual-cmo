@@ -175,8 +175,7 @@ const MainLayout = () => {
   const [navOptions, setNavOptions] = useState(leftNav);
   const [currentNav, setCureentNav] = useState("Dashboard");
   return (
-    <div>
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col h-screen w-screen">
         <div className="flex flex-1">
           <div className="flex justify-center text-center item-center">
             <div className="bg-blue-500 w-16 h-screen">
@@ -210,11 +209,11 @@ const MainLayout = () => {
             </div>
           </div>
 
-          <div className="w-64    bg-slate-50">
+          <div className="w-96 bg-slate-50">
             <h1 className="  flex justify-center text-center font-bold mt-[42%] ">
               Company Name
             </h1>
-            <h1 className="flex justify-center text-center mt-[10%] font-bold text-blue-700">
+            <h1 className="flex justify-start text-center mt-[10%] font-bold text-blue-700 ml-[5%]">
               {" "}
               {currentNav}
             </h1>
@@ -239,12 +238,11 @@ const MainLayout = () => {
               </div>
             </div>
           </div>
-          <div className="w-[100%] bg-blue-50 flex items-center justify-center">
+          <div className="w-[100%] bg-blue-50 flex justify-center">
             <Outlet />
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
