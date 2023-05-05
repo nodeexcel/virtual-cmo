@@ -5,12 +5,12 @@ import Blogs from "../../assets/BlogsEmail.png";
 import ArrowRight from "../../assets/ArrowRight.svg";
 import ProgressBar from "../common/ProgressBar";
 
-const BlogsMailed = () => {
+const keywordsMailed = () => {
   return (
     <div className="w-[80%] flex flex-col h-screen  rounded-lg bg-white mt-[8%]">
       <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
-          I have emailed the blog!
+          I have emailed the social media posts.
         </h1>
       </div>
       <ProgressBar percent={100}/>
@@ -40,4 +40,4 @@ const BlogsMailed = () => {
     </div>
   );
 };
-export default BlogsMailed;
+export default keywordsMailed;
