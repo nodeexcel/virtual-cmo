@@ -1,7 +1,7 @@
 import React from "react";
 import ProgressBar from "../common/ProgressBar";
 
-const TableKeywords = () => {
+const TableKeywords = ({setCurrScreen}) => {
   return (
     <div className="w-[80%] flex flex-col h-screen rounded-lg bg-white mt-[8%]">
       <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
@@ -139,7 +139,9 @@ const TableKeywords = () => {
         </div>
       </div>
       <div className="flex m-auto mt-[4%] justify-center mb-[1%] items-center">
-        <button class="bg-blue-500  rounded-lg py-2 px-2 mr-4 hover:bg-blue-500 text-slate-50 text-sm  hover:text-white  border border-blue-500 hover:border-transparent ">
+        <button 
+        onClick={() => setCurrScreen(4)}
+         class="bg-blue-500  rounded-lg py-2 px-2 mr-4 hover:bg-blue-500 text-slate-50 text-sm  hover:text-white  border border-blue-500 hover:border-transparent ">
           Email this Sheet
         </button>
         <button class="bg-transparent  rounded-lg py-2 px-2 hover:bg-blue-500 text-blue-700 text-sm flex  hover:text-white   border border-blue-500 hover:border-transparent ">

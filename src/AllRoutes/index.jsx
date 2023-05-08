@@ -4,15 +4,13 @@ import Loginpage from "../pages/Loginpage";
 import VerificationPage from '../pages/VerificationPage';
 import Password from '../pages/Password';
 import Website from '../pages/Website';
-import Loader from '../components/Loader'
-// import Dashboard from "../components/Dashboard";
-// import BlogsLoader from "../components/BlogsLoader";
-// import BlogsIdea from "../components/BlogsIdea";
+import Loader from '../components/Loader';
 import MainLayout from "../layout/MainLayout";
 import Dashboard from "../pages/Dashboard";
 import BlogsPage from "../pages/BlogsPage";
 import KeywordsPage from "../pages/KeywordsPage";
 import GoogleAdsPage from "../pages/GoogleAdsPage";
+import SocialMediaPage from "../pages/SocialMediaPage";
 
 
 const AllRoutes = () => {
@@ -20,8 +18,10 @@ const AllRoutes = () => {
     <Routes>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Dashboard/>}/>
-        <Route path="content-marketing" element={<BlogsPage/>}>
+        <Route path="/content-marketing" >
+          <Route index element={<BlogsPage/>}/>
           <Route index path="blogs" element={<BlogsPage/>}/>
+          <Route  path="social-media" element={<SocialMediaPage/>}/>
         </Route>
       <Route path="performance-marketing" >
         <Route index  element={<KeywordsPage/>}/>
@@ -34,9 +34,6 @@ const AllRoutes = () => {
         <Route path="password" element={<Password />} />
         <Route path="website" element={<Website />} />
         <Route path="loader" element={<Loader />} />
-      {/* <Route path="/blogsLoader" element={<BlogsLoader />}  /> */}
-      {/* <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/dashboard/:id" element={<Dashboard />}  /> */}
     </Routes>
   );
 };

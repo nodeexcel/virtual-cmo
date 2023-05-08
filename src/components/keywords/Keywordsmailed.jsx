@@ -1,13 +1,13 @@
 import React from "react";
-import { BlogsCentre } from "./Blogs";
+import {KeywordsCentre} from "./Keywords"
 
 import Blogs from "../../assets/BlogsEmail.png";
 import ArrowRight from "../../assets/ArrowRight.svg";
 import ProgressBar from "../common/ProgressBar";
 
-const keywordsMailed = () => {
+const KeywordsMailed = () => {
   return (
-    <div className="w-[80%] flex flex-col h-screen  rounded-lg bg-white mt-[8%]">
+    <div className="w-[80%] flex flex-col h-screen  rounded-lg bg-white mt-[2%]">
       <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
           I have emailed the social media posts.
@@ -16,7 +16,7 @@ const keywordsMailed = () => {
       <ProgressBar percent={100}/>
 
       <div className=" m-auto mt-[3%] h-screen items-center justify-center  w-[80%]">
-        <BlogsCentre img={Blogs} />
+        <KeywordsCentre img={Blogs}  />
         <div className="flex justify-center">
           <div className="p-2 px-4 bg-blue-600 self-center flex items-center justify-center  rounded-lg">
             <p className="text-white mr-2 text-xs">Blogs Topic</p>
@@ -40,4 +40,4 @@ const keywordsMailed = () => {
     </div>
   );
 };
-export default keywordsMailed;
+export default KeywordsMailed;

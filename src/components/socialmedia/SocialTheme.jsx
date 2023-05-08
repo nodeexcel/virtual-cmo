@@ -7,25 +7,25 @@ import Inspiration from "../../assets/Inspiration.png";
 
 import ProgressBar from "../common/ProgressBar";
 
-const SocialTheme = () => {
+const SocialTheme = ({setSocialMedia}) => {
   return (
-    <div className="w-[65%] m-auto h-screen mt-[2%] bg-slate-50 ">
+    <div className="w-[80%] m-auto h-screen mt-[2%] bg-slate-50 ">
       <div className="w-[100%] h-[12%] mt-[1%] px-8 py-8 text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
         These are Social media themes on which I can work.
       </div>
       <ProgressBar percent={30} />
 
-      <div className=" m-auto mt-[8%] h-screen items-center justify-center  w-[60%]">
+      <div className=" m-auto mt-[4%] h-screen items-center justify-center  w-[90%]">
         <p className=" m-auto text-xl text-gray-600 justify-center item-center py-2 px-4 ">
           Select Themes for your Posts.
         </p>
-        <section class="text-gray-600 body-font">
-          <div class="container px-5 py-24 mx-auto">
+        <section class="text-gray-600 body-font mt-[-6%]">
+          <div class="container px-5 py-24 ">
             <div class="flex flex-col">
               
             </div>
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-              <div class="p-2 md:w-1/3 border rounded-lg mr-2 sm:mb-0 ">
+            <div class="flex flex-wrap sm:-m-4 -mx-4 ">
+              <div class="p-2 w-[33%] border rounded-lg mr-2 sm:mb-0 ">
                 <div class="rounded-lg h-auto  overflow-hidden">
                   <img
                     alt="content"
@@ -45,7 +45,7 @@ const SocialTheme = () => {
                   ADD
                 </button>
               </div>
-              <div class="p-2 md:w-1/3  border rounded-lg mr-2 sm:mb-0 mb-6">
+              <div class="p-2 w-[30%]  border rounded-lg mr-2 sm:mb-0 mb-6">
                 <div class="rounded-lg h-auto overflow-hidden">
                   <img
                     alt="content"
@@ -64,7 +64,7 @@ const SocialTheme = () => {
                   ADD
                 </button>
               </div>
-              <div class="p-2 md:w-1/3  border rounded-lg mr-2 sm:mb-0 mb-2">
+              <div class="p-2 w-[30%]  border rounded-lg mr-2 sm:mb-0 mb-2">
                 <div class="rounded-lg h-auto overflow-hidden">
                   <img
                     alt="content"
@@ -83,7 +83,7 @@ const SocialTheme = () => {
                   ADD
                 </button>
               </div>
-              <button class=" m-auto mt[2%] rounded-lg bg-blue-600 text-slate-50 flex items-center justify-center py-2 px-6 ring-1 border border-blue-500 ">
+              <button onClick={() => setSocialMedia(3)} class=" m-auto mt-[2%] rounded-lg bg-blue-600 text-slate-50 flex items-center justify-center py-2 px-6 ring-1 border border-blue-500 ">
                 Generate Count
               </button>
             </div>

@@ -10,7 +10,7 @@ import ProgressBar from "../common/ProgressBar";
 
 const BlogsLoader = ({ setCurrScreen }) => {
   return (
-    <div className="w-[80%] h-screen flex flex-col rounded-lg bg-white mt-[8%]">
+    <div className="w-[80%] h-screen flex flex-col rounded-lg bg-white mt-[4%]">
       <div className="w-[100%] h-[20%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
           Let me generate a few blogs topic for you

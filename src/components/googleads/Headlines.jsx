@@ -6,7 +6,8 @@ function Headlines() {
     <>
       {[1, 2, 3, 4, 5].map(() => {
         return (
-          <div className="flex justify-center items-center ">
+          
+          <div className="flex justify-center items-center">
             <h1 className="text-3xl  text-gray-700 flex justify-center ">
               Get off 50% only this Sunday{" "}
             </h1>

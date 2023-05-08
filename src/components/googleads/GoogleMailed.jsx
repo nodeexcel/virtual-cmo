@@ -1,7 +1,8 @@
 import React from "react";
 import Blogs from "../../assets/BlogsEmail.png";
+import ProgressBar from "../common/ProgressBar";
 
-import { GoogleCentre, GoogleLoader } from "./Googleads";
+import { GoogleCentre} from "./Googleads";
 
 const GoogleMailed = () => {
   return (
@@ -10,7 +11,7 @@ const GoogleMailed = () => {
         I have emailed the Google ads assests.
       </div>
 
-      <GoogleLoader percent={100} />
+      <ProgressBar percent={100} />
 
       <div className=" m-auto mt-[4%] h-auto items-center justify-center  w-[60%]">
         <GoogleCentre img={Blogs} />

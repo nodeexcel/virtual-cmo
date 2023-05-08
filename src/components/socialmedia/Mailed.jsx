@@ -6,7 +6,7 @@ import ProgressBar from "../common/ProgressBar";
 
 const SocialMail = () => {
   return (
-    <div className="w-[65%] m-auto h-screen bg-slate-50 ">
+    <div className="w-[80%] m-auto h-screen bg-slate-50 ">
       <div className="w-[100%] h-[13%] mt-[1%] px-4 py-6 text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
         I have emailed the Social media Posts.
       </div>

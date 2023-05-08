@@ -8,11 +8,11 @@ import ProgressBar from "../common/ProgressBar"
 const WorkingCopies = ({setCurrScreen}) => {
   useEffect(() => {
     setTimeout(() => {
-      setCurrScreen(3)
-    })
-  },[])
+      setCurrScreen(3);
+    }, 2000);
+  }, []);
   return (
-    <div className="w-[65%] m-auto h-screen bg-slate-50  ">
+    <div className="w-[90%] m-auto h-screen bg-slate-50 mt-[8%]  ">
      
 
       <ProgressBar percent={50} />

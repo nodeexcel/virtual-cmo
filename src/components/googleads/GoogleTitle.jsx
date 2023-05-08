@@ -12,7 +12,7 @@ const Googleads = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <div className="w-[80%] flex flex-col h-screen rounded-lg bg-white mt-[8%]">
-      <div className="w-[100%] h-[15%] p-5 rounded-lg flex items-center  bg-blue-200 flex ">
+      <div className="w-[100%] h-[15%] p-5 rounded-lg  items-center  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left ml-[3%]">
           Here you go, here are some Ad copies that we can use !
         </h1>
@@ -35,11 +35,11 @@ export default Googleads;
 const RenderComponent = ({ index }) => {
   switch (index) {
     case 0:
-      return <Headlines />;
+      return <Headlines/>;
     case 1:
-      return <Description />;
+      return <Description/>;
     case 2:
-      return <ImageComponent />;
+      return <ImageComponent/>;
     case 3:
       return <Ctas />;
 

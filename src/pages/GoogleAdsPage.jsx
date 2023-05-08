@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import GoogleCopies from "../components/googleads/GoogleCopies";
 import WorkingCopies from "../components/googleads/WorkingCopies";
-import Googleads from "../components/googleads";
+
+import GoogleMailed from "../components/googleads/GoogleMailed";
+import Googleads from "../components/googleads/GoogleTitle";
 
 function GoogleAdsPage() {
   const [currScreen, setCurrScreen] = useState(1);
@@ -10,8 +12,10 @@ function GoogleAdsPage() {
       return <GoogleCopies setCurrScreen={setCurrScreen} />;
     case 2:
       return <WorkingCopies setCurrScreen={setCurrScreen} />;
-    case 3:
-      return <Googleads setCurrScreen={setCurrScreen}/>;
+      
+      case 3:
+      return <Googleads setCurrScreen={setCurrScreen} />;
+    
     default:
       return <GoogleCopies setCurrScreen={setCurrScreen} />;
   }
