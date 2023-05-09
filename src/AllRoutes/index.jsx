@@ -11,13 +11,14 @@ import BlogsPage from "../pages/BlogsPage";
 import KeywordsPage from "../pages/KeywordsPage";
 import GoogleAdsPage from "../pages/GoogleAdsPage";
 import SocialMediaPage from "../pages/SocialMediaPage";
+import Business from "../pages/Businesspage";
 
 
 const AllRoutes = () => {
   return (
     <Routes>
-      
-      <Route path="/onboarding" element={<Loginpage />}/>
+      <Route path="/onboarding" element={<Business />}/>
+      <Route path="/loginpage" element={<Loginpage />}/>
       <Route path="/verificationpage" element={< VerificationPage/>}/>
       <Route path="/password" element={< Password/>}/>
       <Route path="/website" element={< Website/>}/>

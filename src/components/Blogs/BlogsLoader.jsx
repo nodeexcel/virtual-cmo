@@ -1,12 +1,8 @@
 import React from "react";
-// import loader from "../../assets/Generateblogs.png";
-// import topic from "../assets/Generatetopic.png";
-// import Content from "../assets/ContentLoader.png";
 import Blogs from "../../assets/Contentblog.png";
-
 import "../../App.css";
-import { BlogsCentre } from "./Blogs";
 import ProgressBar from "../common/ProgressBar";
+import { BlogsCentre } from "./Blogs";
 
 const BlogsLoader = ({ setCurrScreen }) => {
   return (
@@ -17,7 +13,7 @@ const BlogsLoader = ({ setCurrScreen }) => {
         </h1>
       </div>
 
-      <ProgressBar percent={10}/>
+      <ProgressBar percent={10} />
 
       <div className=" m-auto mt-[20%] h-screen  w-[60%]">
         <h1 className="text-blue-500 font-bold text-md  -mb-[10%]">Blogs</h1>
