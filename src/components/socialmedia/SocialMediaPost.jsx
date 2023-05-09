@@ -15,7 +15,7 @@ const SocialMediaPost = ({setSocialMedia}) => {
         Here you go, I have generated Social Media Posts.
       </div>
       <ProgressBar percent={80} />
-      <div className="flex">
+      <div className="flex m-auto ">
 
       <div className=" p-5 mt-[4%] h-screen items-center justify-center  w-[65%]">
         <div className="w:1/2 flex m-auto">

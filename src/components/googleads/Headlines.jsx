@@ -16,7 +16,7 @@ function Headlines() {
         );
       })}
 
-      <div className="flex  mt-8 m-auto justify-center ">
+      <div className="flex  mt-4 m-auto justify-center ">
         <button class="bg-blue-500  font-bold text-sm rounded-lg py-2 px-2 mr-8 hover:bg-blue-500 text-slate-50  flex items-center justify-center hover:text-white  border border-blue-500 hover:border-transparent ">
           Email these assets
         </button>

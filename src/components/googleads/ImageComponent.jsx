@@ -5,11 +5,11 @@ import rectangle from '../../assets/Rectangle.png';
 function ImageComponent() {
   return (
     <div>
-      <section class="text-gray-600 body-font mx-auto">
-        <div class=" container mt-[3%] px-5 py-4 mx-auto">
+      <section class="text-gray-600 body-font mx-auto overflow-hidden">
+        <div class=" container mt-[1%] px-5 py-4 mx-auto">
           <div class="flex flex-col"></div>
           <div class="flex flex-wrap justify-center  sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <div class="p-1 mr-[1%] md:w-[30%] h- rounded-lg border-4 sm:mb-0 mb-6">
+            <div class="p-1 mr-[3%] md:w-[30%] h- rounded-lg border-4 sm:mb-0 mb-6">
               <div class="rounded-lg h-42 overflow-hidden">
                 <img
                   alt="content"
@@ -37,7 +37,7 @@ function ImageComponent() {
               <h2 class="text-md font-medium title-font text-gray-900 mt-2">
               Photography
               </h2>
-              <p class="text-xs  leading-relaxed mt-1">
+              <p class="text-xs  bg-slate-200   leading-relaxed mt-1">
               image size 1200 * 1500
               </p>
              
@@ -53,7 +53,7 @@ function ImageComponent() {
               <h2 class="text-md font-medium title-font text-gray-900 mt-2">
               Photography
               </h2>
-              <p class="text-xs  leading-relaxed mt-1 ">
+              <p class="text-xs  bg-slate-200   leading-relaxed mt-1 ">
               image size 1200 * 1200
               </p>
               

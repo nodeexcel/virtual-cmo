@@ -3,7 +3,7 @@ import ProgressBar from "../common/ProgressBar";
 
 const TableKeywords = ({setCurrScreen}) => {
   return (
-    <div className="w-[80%] flex flex-col h-screen rounded-lg bg-white mt-[8%]">
+    <div className="w-[80%] flex flex-col h-screen rounded-lg bg-white mt-[2%] overflow-hidden">
       <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
           Here we go, here are the top Keywords for uour business!

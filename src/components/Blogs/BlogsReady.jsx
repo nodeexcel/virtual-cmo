@@ -12,7 +12,7 @@ const BlogsReady = ({ setCurrScreen }) => {
           Your blogs is Ready!
         </h1>
       </div>
-      <ProgressBar percent={10}/>
+      <ProgressBar percent={80}/>
       <img
         src={RelaodIcon}
         height={20}

@@ -8,7 +8,7 @@ import ProgressBar from "../common/ProgressBar";
 const BlogsMailed = () => {
   return (
     <div className="w-[80%] flex flex-col h-screen  rounded-lg bg-white mt-[2%] overflow-hidden">
-      <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
+      <div className="w-[100%] h-[12%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
           I have emailed the blog!
         </h1>
@@ -17,7 +17,7 @@ const BlogsMailed = () => {
       <ProgressBar percent={100}/>
       </div>
 
-      <div className=" m-auto mt-[2%] h-screen items-center justify-center  w-[80%]">
+      <div className=" m-auto  h-screen items-center justify-center  w-[80%]">
         <BlogsCentre  img={Blogs} />
         <div className="flex justify-center">
           <div className="p-2 px-4 bg-blue-600 self-center flex items-center justify-center  rounded-lg">

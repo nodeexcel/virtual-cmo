@@ -5,7 +5,7 @@ function Description({setCurrScreen}) {
   return (
     <>
       {[1, 2, 3, 4, 5].map(() => (
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center overflow-hidden">
           <h1 className="text-2xl text-gray-700 flex justify-center">
             Limited offer time. Buy now and sav big{" "}
           </h1>
@@ -13,7 +13,7 @@ function Description({setCurrScreen}) {
         </div>
       ))}
 
-      <div className="flex  mt-8 m-auto justify-center ">
+      <div className="flex  mt-4 m-auto justify-center ">
         <button  onClick={() => {
             setCurrScreen(4);
           }} class="bg-blue-500  font-bold text-sm rounded-lg py-2 px-2 mr-8 hover:bg-blue-500 text-slate-50  flex items-center justify-center hover:text-white  border border-blue-500 hover:border-transparent ">

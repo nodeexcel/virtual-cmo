@@ -13,7 +13,7 @@ const BlogsTopic = ({ setCurrScreen }) => {
   },[])
   return (
     <div className="w-[80%] h-screen flex flex-col rounded-lg bg-white mt-[8%]">
-      <ProgressBar percent={10}/>
+      <ProgressBar percent={60}/>
 
       <div className=" m-auto mt-[15%] h-screen items-center justify-center  w-[60%]">
         <BlogsCentre img={Blogs} />
