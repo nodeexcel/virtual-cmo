@@ -58,12 +58,12 @@ const Contentmarketing = [
   {
     text: "Blogs",
     src: logo7,
-    href: "/content-marketing/blogs",
+    href: "content-marketing/blogs",
   },
   {
     text: "Social Media",
     src: logo7,
-    href: "/content-marketing/social-media",
+    href: "content-marketing/social-media",
   },
   {
     text: "Website SEO",

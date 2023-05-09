@@ -16,13 +16,21 @@ import SocialMediaPage from "../pages/SocialMediaPage";
 const AllRoutes = () => {
   return (
     <Routes>
+      
+      <Route path="/onboarding" element={<Loginpage />}/>
+      <Route path="/verificationpage" element={< VerificationPage/>}/>
+      <Route path="/password" element={< Password/>}/>
+      <Route path="/website" element={< Website/>}/>
+      <Route path="/loader" element={<Loader/>}/>
+
+      
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Dashboard/>}/>
-        <Route path="/content-marketing" >
+        <Route path="content-marketing" >
           <Route index element={<BlogsPage/>}/>
           <Route index path="blogs" element={<BlogsPage/>}/>
           <Route  path="social-media" element={<SocialMediaPage/>}/>
-        </Route>
+      </Route>
       <Route path="performance-marketing" >
         <Route index  element={<KeywordsPage/>}/>
         <Route index path="keywords" element={<KeywordsPage/>}/>

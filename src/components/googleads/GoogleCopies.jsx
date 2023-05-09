@@ -6,8 +6,8 @@ import { GoogleCentre } from "./Googleads";
 
 const GoogleCopies = ({ setCurrScreen }) => {
   return (
-    <div className="w-[80%] flex flex-col rounded-lg bg-white mt-[8%]">
-      <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
+    <div className="w-[80%] flex flex-col rounded-lg bg-white mt-[3%] overflow-hidden">
+      <div className="w-[100%] h-[12%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
           I have scanned through your Website and i can generate copies for
           google ads.

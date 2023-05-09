@@ -53,14 +53,14 @@ const SocialTheme = ({setSocialMedia}) => {
                     src={Educational}
                   />
                 </div>
-                <h2 class="text-md font-medium title-font text-gray-900 mt-5">
+                <h2 class="text-md font-medium title-font text-gray-900 mt-8">
                   Educational Posts
                 </h2>
                 <p class="text-xs bg-slate-200 rounded-lg text-left p-2 mt-2">
                   Educational posts provide information or tips on a specific
                   topic or area of interest.
                 </p>
-                <button class=" text-left mt-2 rounded-lg text-green-500  flex items-center justify-center py-2 px-4 ring-1 border border-green-500  ">
+                <button class=" text-left  mt-[16%] rounded-lg text-green-500  flex items-center justify-center py-2 px-4 ring-1 border border-green-500  ">
                   ADD
                 </button>
               </div>
@@ -72,14 +72,14 @@ const SocialTheme = ({setSocialMedia}) => {
                     src={Inspiration}
                   />
                 </div>
-                <h2 class="text-md font-medium title-font text-gray-900 mt-5">
+                <h2 class="text-md font-medium title-font text-gray-900 mt-8">
                   Inspirational Posts
                 </h2>
                 <p class="text-xs rounded-lg p-2 text-left bg-slate-200 mt-2">
                   Inspirational posts feature quotes or stories that inspire and
                   motivate your audience
                 </p>
-                <button class=" text-left mt-6 rounded-lg text-green-500  flex items-center justify-center py-2 px-4 ring-1 border border-green-500  ">
+                <button class=" text-left mt-[22%] rounded-lg text-green-500  flex items-center justify-center py-2 px-4 ring-1 border border-green-500  ">
                   ADD
                 </button>
               </div>

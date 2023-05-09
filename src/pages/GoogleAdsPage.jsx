@@ -15,6 +15,8 @@ function GoogleAdsPage() {
       
       case 3:
       return <Googleads setCurrScreen={setCurrScreen} />;
+      case 3:
+        return <GoogleMailed setCurrScreen={setCurrScreen} />;
     
     default:
       return <GoogleCopies setCurrScreen={setCurrScreen} />;
