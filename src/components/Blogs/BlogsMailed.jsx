@@ -1,26 +1,26 @@
 import React from "react";
 import { BlogsCentre } from "./Blogs";
 
-import Blogs from "../../assets/BlogsEmail.png";
+import Blogs from "../../assets/Blogs.svg";
 import ArrowRight from "../../assets/ArrowRight.svg";
 import ProgressBar from "../common/ProgressBar";
 
 const BlogsMailed = () => {
   return (
-    <div className="w-[80%] flex flex-col h-screen  rounded-lg bg-white mt-[2%] overflow-hidden">
+    <div className="w-[80%] flex flex-col h-screen  rounded-lg bg-white mt-[1%] overflow-hidden">
       <div className="w-[100%] h-[12%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
           I have emailed the blog!
         </h1>
       </div>
       <div className="h-auto w-auto mb-[-8%]">
-      <ProgressBar percent={100}/>
+      <ProgressBar  percent={100}/>
       </div>
 
-      <div className=" m-auto  h-screen items-center justify-center  w-[80%]">
-        <BlogsCentre  img={Blogs} />
+      <div className=" m-auto  items-center justify-center  w-[80%]">
+        <BlogsCentre classess={'h-[20%]'}  img={Blogs} />
         <div className="flex justify-center">
-          <div className="p-2 px-4 bg-blue-600 self-center flex items-center justify-center  rounded-lg">
+          <div className="p-2 px-4 bg-blue-600 mt-[-4%] self-center flex items-center justify-center  rounded-lg">
             <p className="text-white mr-2 text-xs">Blogs Topic</p>
             <img src={ArrowRight} height={15} width={15} />
           </div>

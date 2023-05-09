@@ -1,5 +1,5 @@
 import React from "react";
-import Blogs from "../../assets/BlogsEmail.png";
+import Blogs from "../../assets/Blogs.svg";
 import ProgressBar from "../common/ProgressBar";
 
 import { GoogleCentre} from "./Googleads";

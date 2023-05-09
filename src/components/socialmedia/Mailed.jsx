@@ -1,7 +1,7 @@
 import React from "react";
 import { SocialCentre } from "./SocialMedia";
 
-import Blogs from "../../assets/BlogsEmail.png";
+import Blogs from "../../assets/Blogs.svg";
 import ProgressBar from "../common/ProgressBar";
 
 const SocialMail = () => {
