@@ -6,7 +6,7 @@ import { BlogsCentre } from "./Blogs";
 
 const BlogsLoader = ({ setCurrScreen }) => {
   return (
-    <div className="w-[80%] h-screen flex flex-col rounded-lg bg-white mt-[4%]">
+    <div className="w-[80%] h-screen flex flex-col rounded-lg bg-white mt-[4%] overflow-hidden">
       <div className="w-[100%] h-[20%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
           Let me generate a few blogs topic for you
@@ -15,7 +15,7 @@ const BlogsLoader = ({ setCurrScreen }) => {
 
       <ProgressBar percent={10} />
 
-      <div className=" m-auto mt-[20%] h-screen  w-[60%]">
+      <div className=" m-auto mt-[5%] h-screen  w-[60%]">
         <h1 className="text-blue-500 font-bold text-md  -mb-[10%]">Blogs</h1>
         <BlogsCentre img={Blogs} />
         <button
@@ -24,8 +24,7 @@ const BlogsLoader = ({ setCurrScreen }) => {
         >
           Generate Blogs Topic
         </button>
-        {/* <BlogsCentre img={topic} />
-        <BlogsCentre img={Content} /> */}
+        
       </div>
     </div>
   );
