@@ -1,6 +1,6 @@
 import React from "react";
 import keywords from "../../assets/Topkeywords.png";
-import ProgressBar from "../common/ProgressBar";
+import ProgressBar from '../common/ProgressBar'
 
 import { KeywordsCentre } from "./Keywords";
 
@@ -13,8 +13,8 @@ const Topkeywords = ({ setCurrScreen }) => {
           blogs, search ads,and social media content.{" "}
         </h1>
       </div>
-
-      <ProgressBar percent={25} />
+      <ProgressBar percent={25}/>        
+    
         <h1 className="text-blue-600 font-bold mt-[8%]">Keywords</h1>
         <div className="self-center ">
           <KeywordsCentre img={keywords} />

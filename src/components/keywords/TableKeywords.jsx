@@ -9,7 +9,7 @@ const TableKeywords = ({setCurrScreen}) => {
           Here we go, here are the top Keywords for uour business!
         </h1>
       </div>
-      <ProgressBar percent={75} />
+      <ProgressBar percent={75}/>
 
       <div className=" mt-[4%] h-auto self-center  w-[80%]">
         <div class="relative overflow-x-auto shadow-md ">

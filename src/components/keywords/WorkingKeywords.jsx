@@ -11,7 +11,7 @@ const WorkingKeywords = ({ setCurrScreen }) => {
   },[])
 
   return (
-    <div className="w-[80%] flex flex-col h-screen rounded-lg bg-white mt-[8%]">
+    <div className="w-[80%] flex flex-col h-screen rounded-lg bg-white mt-[4%]">
       <ProgressBar percent={50} />
       <div className=" mt-[20%] self-center  w-[60%]">
         <KeywordsCentre img={keywords} />
