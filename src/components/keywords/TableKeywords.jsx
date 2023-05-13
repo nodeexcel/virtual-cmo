@@ -1,18 +1,18 @@
 import React from "react";
 import ProgressBar from "../common/ProgressBar";
 
-const TableKeywords = ({setCurrScreen}) => {
+const TableKeywords = ({ setCurrScreen }) => {
   return (
     <div className="w-[80%] flex flex-col h-screen rounded-lg bg-white mt-[2%] overflow-hidden">
       <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
-          Here we go, here are the top Keywords for uour business!
+          Here you go, here are the top Keywords for your business!
         </h1>
       </div>
-      <ProgressBar percent={75}/>
+      <ProgressBar percent={80} />
 
-      <div className=" mt-[4%] h-auto self-center  w-[80%]">
-        <div class="relative overflow-x-auto shadow-md ">
+      <div className=" mt-[4%] h-auto self-center w-[80%]">
+        <div class="relative overflow-x-auto shadow-md">
           <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead class="text-md  bg-blue-500 text-slate-50">
               <tr>
@@ -139,9 +139,10 @@ const TableKeywords = ({setCurrScreen}) => {
         </div>
       </div>
       <div className="flex m-auto mt-[4%] justify-center mb-[1%] items-center">
-        <button 
-        onClick={() => setCurrScreen(4)}
-         class="bg-blue-500  rounded-lg py-2 px-2 mr-4 hover:bg-blue-500 text-slate-50 text-sm  hover:text-white  border border-blue-500 hover:border-transparent ">
+        <button
+          onClick={() => setCurrScreen(4)}
+          class="bg-blue-500  rounded-lg py-2 px-2 mr-4 hover:bg-blue-500 text-slate-50 text-sm  hover:text-white  border border-blue-500 hover:border-transparent "
+        >
           Email this Sheet
         </button>
         <button class="bg-transparent  rounded-lg py-2 px-2 hover:bg-blue-500 text-blue-700 text-sm flex  hover:text-white   border border-blue-500 hover:border-transparent ">

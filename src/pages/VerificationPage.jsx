@@ -36,21 +36,24 @@ const EmailVerifyInput = () => {
           <h3 className="leading-relaxed text-base"> Verification Code</h3>
         </div>
 
-        <div className="lg:pl-40">
+        <div className="mt-[-6%] w-[100%]">
           <input
             type="text"
             value={code}
-            className="border-b w-[100%] mt-[10%] border-black focus:outline-none focus:border-black"
+            className="border-b w-[50%] mt-[10%] border-blue-500 focus:outline-none"
             onChange={verficationHandler}
           />
-          <p className="mt-[5%]">Didn't get the mail??</p>
+         
+        </div>
+        <div className="ml-[25%] mt-[2%] text-left">
+        <p className="">Didn't get the mail??</p>
           <p className="text-green-500 text-lg">
             Resend or edit your email address
           </p>
         </div>
 
         <button
-          className="mt-[3%] w-[20%] h-[5%] mx-auto justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
+          className="mt-[3%] w-[20%] h-[5%] mx-auto justify-center align-center text-sm text-blue-500 border-2 border-blue-500 inline-flex items-center bg-slate-50 rounded-lg"
           onClick={PassHandler}
         >
           Next
@@ -74,10 +77,10 @@ const EmailVerifyInput = () => {
 const ImgText = () => (
   <>
     <h2 className="text-4xl mt-[10%] font-bold text-slate-50 ml-[5%]">
-      Norem ipsum dolor
+      Automate. Succeed. Repeat.
     </h2>
     <p className="text-slate-50 ml-[5%] mt-[3%]">
-      Unlock the Power of AI for Your Digital Marketing Needs{" "}
+      Sayonara, marketing monotony. Aloha, automation awesomeness! Sentence
     </p>
   </>
 );
@@ -87,7 +90,9 @@ function VerificationPage() {
     <>
       <section className="text-gray-600 body-font">
         <div className="container  flex flex-wrap h-screen">
-          <VerificationContainer classess={"bg-blue-500 sm:hidden md:hidden lg:block "}>
+          <VerificationContainer
+            classess={"bg-blue-500 sm:hidden md:hidden lg:block "}
+          >
             <Logo color={"text-slate-50"} />
             <LeftVerticleImg img={logo}>
               <ImgText />

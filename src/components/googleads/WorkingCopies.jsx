@@ -17,11 +17,11 @@ const WorkingCopies = ({setCurrScreen}) => {
 
       <ProgressBar percent={50} />
 
-      <div className=" m-auto mt-[4%] h-screen items-center justify-center  w-[60%]">
+      <div className="m-auto mt-[4%] h-screen items-center justify-center  w-[60%]">
         
         <GoogleCentre img={Blogs} />
         <p className="bg-transparent m-auto rounded-lg  text-blue-700 font-semibold flex items-center justify-center hover:text-white py-2 px-4  border-blue-500 hover:border-transparent ">
-          Working on Ad Copies..
+          Working on Ad Copies...
         </p>
       </div>
     </div>

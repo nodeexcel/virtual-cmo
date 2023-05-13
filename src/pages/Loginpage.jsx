@@ -1,15 +1,14 @@
 import React from "react";
 import logo from "../assets/Frame3.png";
+import Google from "../assets/Google.svg";
+import Facebook from "../assets/Facebook.png";
+
 import Logo from "../components/common/logo";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setEmail } from "../Store/reducer/loginpage.slice";
+import { LeftVerticleImg, VerificationContainer } from "../components/verification";
 
-import {
-  LeftVerticleImg,
-  VerificationContainer,
-} from "../components/verification";
-import { BsFacebook , BsGoogle} from "react-icons/bs";
 
 
 const VerificationPage = () => {
@@ -24,49 +23,48 @@ const VerificationPage = () => {
   };
   return (
     <>
-      <div className="flex flex-col mb-10 lg:items-start items-center justify-center h-full w-full">
-        <div className="items-center ">
-          <h2 className=" text-4xl title-font lg:pl-44 md flex justify-center text-center  mb-1 font-bold text-blue-500">
-            Sign Up
+     <div className="flex flex-col mb-10 lg:items-start items-center justify-center h-full">
+        <div className="items-center mx-auto ">
+          <h2 className=" text-4xl title-font   mb-1 font-bold text-blue-700">
+          Sign Up
           </h2>
-          
-          <p className="leading-relaxed items-center md:items-center lg:pl-44 md:pl-24 text-base">
-            lorem ipsum dolar sit amet, consectetur adipiscing elit. Nunc
-          </p>
-          <div className="lg:pl-38 md:pl-38 h-[100%] w-[120%]">
-            <button className="mt-[3%] w-[60%] h-[30%] font-bold   m-auto flex justify-center text-center align-center text-md text-slate-50  items-center bg-blue-500 rounded-lg">
-              <BsGoogle className="mr-6 text-black" />
+         
+        </div>
+        <div className="mx-auto w-[100%]">
+        <button className="mt-[4%] w-[60%] h-[26%] font-bold px-6  m-auto flex justify-center text-center align-center text-md text-slate-50  items-center bg-blue-500 rounded-lg">
+              <img className="h-auto mr-8" src={Google}/>
               Signup with Google
             </button>
-            <button className="mt-[3%] w-[60%] h-[30%]   m-auto flex justify-center text-center align-center text-md font-bold text-black  items-center border rounded-lg">
-              <BsFacebook className="mr-5" />
+            <button className="mt-[4%] w-[60%] h-[26%]   m-auto flex justify-center text-center align-center text-md font-bold text-black  items-center border rounded-lg">
+            <img className="h-[85%] mr-6" src={Facebook}/>
               Signup with Facebook
             </button>
-          </div>
-          <small className="lg:pl-40 dashed-or mt-[-5%] md:mt-[-5%] flex justify-center text-center items-center">Or</small>
+         
+          <small className=" dashed-or mt-[2%] flex justify-center text-center items-center">
+            Or
+          </small>
+         
         </div>
-
-        <div className="flex items-center mt-[17%]  lg:pl-40 md:pl-5">
-          <h3 className="leading-relaxed font-bold text-base">
-            
-            Email Address
-          </h3>
+        <div className="flex items-center mt-[4%] mb-[1%] ml-[20%]">
+          <h3 className="leading-relaxed text-base">Email Address</h3>
         </div>
-
-        <div className="lg:pl-40">
+        
+        <div className="mx-auto w-[60%]">
+          
           <input
             type="text"
             value={email}
-            className="border-b  w-[245%] mt-[10%] border-black focus:outline-none focus:border-black"
+            className="border-b w-[100%] mt-[2%] border-blue-700 focus:outline-none "
             onChange={EmailHandler}
           />
+         
         </div>
 
         <button
-          className="mx-auto mt-[5%] md:w-[20%] sm:w-[20%] w-[20%] h-[5%]  justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
+          className="mt-[3%] w-[20%] h-[5%] mx-auto justify-center align-center text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
           onClick={VerifyHandler}
         >
-          Verify email
+          Next
           <svg
             fill="none"
             stroke="currentColor"
@@ -78,10 +76,9 @@ const VerificationPage = () => {
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-
         </button>
-        
       </div>
+    
     </>
   );
 };
@@ -89,10 +86,10 @@ const VerificationPage = () => {
 const ImgText = () => (
   <>
     <h2 className="text-4xl mt-[10%] font-bold text-slate-50 ml-[5%]">
-      Norem ipsum dolor
+      Get Future Ready
     </h2>
     <p className="text-slate-50 ml-[5%] mt-[3%]">
-      Unlock the Power of AI for Your Digital Marketing Needs{" "}
+      Goodbye marketing monotony, hello automated awesomeness!{" "}
     </p>
   </>
 );
@@ -102,13 +99,15 @@ function Loginpage() {
     <>
       <section className="text-gray-600 body-font">
         <div className=" flex flex-wrap h-screen class md:m-auto">
-          <VerificationContainer classess={"bg-blue-500 sm:hidden md:hidden lg:block"}>
+          <VerificationContainer
+            classess={"bg-blue-500 sm:hidden md:hidden lg:block"}
+          >
             <Logo color={"text-slate-50"} />
             <LeftVerticleImg img={logo}>
-              <ImgText  />
+              <ImgText />
             </LeftVerticleImg>
           </VerificationContainer>
-          <VerificationContainer classess={'sm:m-auto md:m-auto'}>
+          <VerificationContainer classess={"sm:m-auto md:m-auto"}>
             <VerificationPage />
           </VerificationContainer>
         </div>

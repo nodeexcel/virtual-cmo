@@ -4,24 +4,24 @@ import Arrow from '../../assets/Arrow.png';
 function Ctas() {
   return (
     <>
-    <div className='flex justify-center '>
+    <div className='flex justify-center'>
       <h1 className='text-3xl mt-[2%] text-gray-700 flex justify-center '>Shop Now! </h1>
       <img className='mt-[-2%]'  src={Arrow}/>
       </div>
-      <div className='flex justify-center '>
+      <div className='flex justify-center'>
       <h1 className='text-3xl mt-[2%] text-gray-700 flex justify-center '>Shop Now! </h1>
       <img className='mt-[-2%]'  src={Arrow}/>
       </div>
-      <div className='flex justify-center '>
-      <h1 className='text-3xl mt-[2%] text-gray-700 flex justify-center '>Shop Now! </h1>
+      <div className='flex justify-center'>
+      <h1 className='text-3xl mt-[2%] text-gray-700 flex justify-center'>Shop Now! </h1>
       <img className='mt-[-2%]' src={Arrow}/>
       </div>
-      <div className='flex justify-center '>
-      <h1 className='text-3xl mt-[2%] text-gray-700 flex justify-center '>Shop Now! </h1>
+      <div className='flex justify-center'>
+      <h1 className='text-3xl mt-[2%] text-gray-700 flex justify-center'>Shop Now!</h1>
       <img className='mt-[-2%]' src={Arrow}/>
       </div>
-      <div className='flex justify-center '>
-      <h1 className='text-3xl mt-[3%] text-gray-700 flex justify-center '>Shop Now! </h1>
+      <div className='flex justify-center'>
+      <h1 className='text-3xl mt-[3%] text-gray-700 flex justify-center'>Shop Now! </h1>
       <img  className='mt-[-2%]' src={Arrow}/>
       </div>
       
@@ -31,7 +31,8 @@ function Ctas() {
           Email these assets
         </button>
         <button class="bg-transparent   rounded-lg py-2 px-2 hover:bg-blue-500 text-blue-700 text-sm flex items-center justify-center hover:text-white   border border-blue-500 hover:border-transparent ">
-          Setup on google ads
+         Set up on Google Ads
+
         </button>
         </div> 
         </>

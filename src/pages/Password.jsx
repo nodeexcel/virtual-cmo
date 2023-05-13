@@ -23,29 +23,29 @@ function Password() {
     <div>
       <section className="text-gray-600 body-font">
         <div className="container  flex flex-wrap h-screen  ">
-          <VerificationContainer classess={"bg-blue-500 sm:hidden md:hidden lg:block"}>
-            <Logo color={"text-slate-50 "} />
+          <VerificationContainer classess={"bg-blue-500 "}>
+            <Logo color={"text-slate-50"} />
             <LeftVerticleImg img={logo} />
           </VerificationContainer>
           <div className="flex flex-col  lg:py-12   -mb-10 lg:w-1/2  lg:text-left text-center items-center justify-center h-full">
             <div className="flex flex-col mb-10 lg:items-start items-center">
-              <div className="flex-grow  items-center ">
-                <h2 className=" text-4xl title-font lg:pl-44  mb-1 font-bold text-blue-500">
+              <div className="flex-grow mx-auto items-center ">
+                <h2 className=" text-4xl title-font   mb-1 font-bold text-blue-500">
                   Create password
                 </h2>
               </div>
-              <div className="flex items-center mt-9 lg:pl-40">
+              <div className="flex items-center mt-9 ">
                 <h1 className="leading-relaxed font-bold text-base">
                   {" "}
                   Password
                 </h1>
               </div>
 
-              <div className="lg:pl-40">
+              <div className="mx-auto">
                 <input
                   type="password"
                   value={password}
-                  className="border-b w-[130%] mt-[5%] border-black focus:outline-none focus:border-black"
+                  className="border-b w-[130%] mt-[5%] border-blue-700 focus:outline-none"
                   onChange={PasswordHandler}
                 />
 
@@ -59,7 +59,7 @@ function Password() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto lg:pl-[22%]">
+            <div className="mx-auto ">
               <button
                 className="mt-3 w-[220%] h-[110%]  text-sm mx-auto flex justify-center text-center  text-slate-50 items-center bg-blue-500 rounded-lg"
                 onClick={WebSiteHandler}

@@ -11,7 +11,7 @@ const SocialTheme = ({setSocialMedia}) => {
   return (
     <div className="w-[80%] m-auto h-screen mt-[2%] bg-slate-50 overflow-hidden ">
       <div className="w-[100%] h-[12%] mt-[1%] px-8 py-8 text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
-        These are Social media themes on which I can work.
+        These are the social media themes on which I can work.
       </div>
       <ProgressBar percent={30} />
 

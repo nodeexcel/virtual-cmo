@@ -9,7 +9,7 @@ const BlogsLoader = ({ setCurrScreen }) => {
     <div className="w-[80%] h-screen flex flex-col rounded-lg bg-white mt-[4%] overflow-hidden">
       <div className="w-[100%] h-[20%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
-          Let me generate a few blogs topic for you
+        Let me generate a few blog topics for you.
         </h1>
       </div>
 
@@ -22,9 +22,8 @@ const BlogsLoader = ({ setCurrScreen }) => {
           onClick={() => setCurrScreen(2)}
           class="bg-transparent rounded-lg hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 ring-1 border border-blue-500 hover:border-transparent "
         >
-          Generate Blogs Topic
+          Generate Blog Topics 
         </button>
-        
       </div>
     </div>
   );

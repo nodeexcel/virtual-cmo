@@ -4,7 +4,7 @@ function Logo({color}) {
   return (
     <>
       <span
-        className={`self-center text-xl font-semibold whitespace-nowrap sm:hidden  md:hidden ml-[4%] mt-[10%] ${styles["logo-font"]} ${color}`}
+        className={` text-xl font-semibold     ml-[-80%] mt-[5%] ${styles["logo-font"]} text-slate-50`}
       >
         VirtualCMO
       </span>

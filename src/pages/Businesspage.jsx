@@ -2,8 +2,8 @@ import React from "react";
 import B2B from "../assets/B2B.png";
 import B2C from "../assets/B2C.png";
 import Ecom from "../assets/Ecom.png";
-import Academic from "../assets/Academic.png";
-import Freelancer from "../assets/Freelancer.png";
+import Freelancer from "../assets/Academic.png";
+import Academic from "../assets/Freelancer.png";
 import Content from "../assets/Content.png";
 import { useNavigate } from "react-router-dom";
 
@@ -33,7 +33,7 @@ function Business() {
                 B2B
               </h2>
               <p className="leading-relaxed text-center">
-                You sell your product oe services to other Businesses
+                You sell your product or services to other Businesses
               </p>
               <p
                 onClick={BusinessHandler}

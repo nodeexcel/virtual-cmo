@@ -11,7 +11,7 @@ function Headlines() {
             <h1 className="text-3xl  text-gray-700 flex justify-center ">
               Get off 50% only this Sunday{" "}
             </h1>
-            <img src={RedReload} />
+            <img src={RedReload}/>
           </div>
         );
       })}
@@ -21,7 +21,7 @@ function Headlines() {
           Email these assets
         </button>
         <button class="bg-transparent  font-bold rounded-lg py-2 px-2 hover:bg-blue-500 text-blue-700 text-sm flex items-center justify-center hover:text-white   border border-blue-500 hover:border-transparent ">
-          Setup on google ads
+        Set up on Google Ads
         </button>
       </div>
     </>

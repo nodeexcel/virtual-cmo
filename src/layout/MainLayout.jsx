@@ -85,11 +85,7 @@ const Performancemarketing = [
     src: logo7,
     href: "/performance-marketing/google-ads",
   },
-  {
-    text: "Ad Copies",
-    src: logo7,
-    href: "ad-copies",
-  },
+  
   {
     text: "Facebook Ads",
     src: logo7,

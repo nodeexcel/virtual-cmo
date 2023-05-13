@@ -20,7 +20,7 @@ function Description({setCurrScreen}) {
           Email these assets
         </button>
         <button class="bg-transparent  font-bold rounded-lg py-2 px-2 hover:bg-blue-500 text-blue-700 text-sm flex items-center justify-center hover:text-white   border border-blue-500 hover:border-transparent ">
-          Setup on google ads
+        Set up on Google Ads
         </button>
       </div>
     </>

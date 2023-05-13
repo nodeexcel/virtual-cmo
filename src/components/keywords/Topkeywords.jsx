@@ -1,6 +1,7 @@
 import React from "react";
 import keywords from "../../assets/Topkeywords.png";
-import ProgressBar from '../common/ProgressBar'
+import ProgressBar from "../common/ProgressBar";
+
 
 import { KeywordsCentre } from "./Keywords";
 
@@ -8,12 +9,13 @@ const Topkeywords = ({ setCurrScreen }) => {
   return (
     <div className="w-[80%] h-screen flex flex-col rounded-lg bg-white mt-[2%]">
       <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
-        <h1 className="text-black text-2xl font-medium leading-9 text-left">
-          I have Scanned through website and i can generate top keywords for
-          blogs, search ads,and social media content.{" "}
+        <h1 className="text-black text-2xl  leading-9 text-left">
+          I have scanned through website and i can generate top keywords for
+          blogs, search ads, and social media.{" "}
         </h1>
+        
       </div>
-      <ProgressBar percent={25}/>        
+          <ProgressBar percent={30}/>  
     
         <h1 className="text-blue-600 font-bold mt-[8%]">Keywords</h1>
         <div className="self-center ">

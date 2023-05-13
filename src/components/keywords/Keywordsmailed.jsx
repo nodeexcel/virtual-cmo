@@ -15,7 +15,7 @@ const KeywordsMailed = () => {
       </div>
       <ProgressBar percent={100}/>
 
-      <div className=" m-auto min-h-screen items-center justify-center mt-[-4%]  w-[80%]">
+      <div className=" m-auto min-h-screen items-center justify-center mt-[-8%]  w-[80%]">
         <KeywordsCentre  img={Blogs}  />
         <div className="flex justify-center">
           <div className="p-2 px-4 mt-[-4%] bg-blue-600 self-center flex items-center justify-center  rounded-lg">

@@ -47,11 +47,11 @@ function Website() {
                 <input
                   value={url}
                   type="text"
-                  className="border-b w-[270%] mt-[10%] border-black 4px focus:outline-none focus:border-black"
+                  className="border-b w-[250%] mt-[10%] border-blue-700 4px focus:outline-none"
                   onChange={WebsiteHandler}
                 />
               </div>
-              <div className="items-center mt-[5%] lg:pl-[55%]">
+              <div className="items-center mt-[5%] mx-auto">
                 <button
                   className="mt-3 w-[200%] mx-auto justify-center align-center h-[110%] text-sm text-slate-50 inline-flex items-center bg-blue-500 rounded-lg"
                   onClick={LoaderHandler}

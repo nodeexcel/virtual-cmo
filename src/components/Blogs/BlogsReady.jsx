@@ -9,10 +9,10 @@ const BlogsReady = ({ setCurrScreen }) => {
     <div className="w-[80%] h-screen flex flex-col rounded-lg bg-white mt-[2%] overflow-hidden">
       <div className="w-[100%] h-[12%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl font-medium leading-9 text-left">
-          Your blogs is Ready!
+          Your blog is ready!
         </h1>
       </div>
-      <ProgressBar percent={80}/>
+      <ProgressBar percent={80} />
       <img
         src={RelaodIcon}
         height={20}
@@ -58,7 +58,7 @@ const BlogsReady = ({ setCurrScreen }) => {
           }}
           class="bg-blue-500  rounded-lg py-2 px-2 mr-4 hover:bg-blue-500 text-slate-50 text-sm  hover:text-white  border border-blue-500 hover:border-transparent "
         >
-          Send this blog to email
+          Email this Blog
         </button>
         <button class="bg-transparent  font-bold rounded-lg py-2 px-2 hover:bg-blue-500 text-blue-700 text-sm flex  hover:text-white   border border-blue-500 hover:border-transparent ">
           Publish on my website

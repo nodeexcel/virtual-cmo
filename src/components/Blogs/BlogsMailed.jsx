@@ -13,19 +13,19 @@ const BlogsMailed = () => {
           I have emailed the blog!
         </h1>
       </div>
-      <div className="h-auto w-auto mb-[-8%]">
+      <div className="h-auto w-auto mb-[-12%]">
       <ProgressBar  percent={100}/>
       </div>
 
-      <div className=" m-auto  items-center justify-center  w-[80%]">
-        <BlogsCentre classess={'h-[20%]'}  img={Blogs} />
+      <div className=" m-auto items-center justify-center  w-[80%]">
+        <BlogsCentre  img={Blogs} />
         <div className="flex justify-center">
-          <div className="p-2 px-4 bg-blue-600 mt-[-4%] self-center flex items-center justify-center  rounded-lg">
+          <div className="p-2 px-4 bg-blue-600 mt-[-6%] self-center flex items-center justify-center  rounded-lg">
             <p className="text-white mr-2 text-xs">Blogs Topic</p>
             <img src={ArrowRight} height={15} width={15} />
           </div>
         </div>
-        <div className="flex  mt-3 ">
+        <div className="flex  mt-2 ">
           <div className="p-2 px-4 mx-2 bg-white border-blue-600 border-2 self-center flex items-center justify-center  rounded-lg">
             <p className="text-blue-600 mr-2 text-xs">
               Generate Social Media post
