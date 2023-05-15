@@ -21,6 +21,8 @@ const SocialContent = ({setSocialMedia}) => {
       <div className=" m-auto mt-[8%] h-screen items-center justify-center  w-[60%]">
        
         <SocialCentre img={Blogs} />
+        <div className="bg-slate-200 h-3 rounded-lg mt-2">
+        </div>
         <p className=" m-auto font-semibold justify-center item-center py-2 px-4 text-blue-500 hover:border-transparent ">
           Working on some content ideas... 
         </p>

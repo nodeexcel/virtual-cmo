@@ -57,7 +57,10 @@ function Business() {
               <p className="leading-relaxed text-center">
                 You sell your product oe services to other Businesses
               </p>
-              <p className="text-blue-600 text-center font-bold mt-5">
+              <p 
+              onClick={BusinessHandler}
+              className="text-blue-600 text-center font-bold mt-5">
+
                 Sign Up
               </p>
             </div>
@@ -75,7 +78,9 @@ function Business() {
               <p className="leading-relaxed text-center">
                 You sell your product oe services to other Businesses
               </p>
-              <p className="text-blue-600 text-center font-bold mt-5">
+              <p
+              onClick={BusinessHandler}
+               className="text-blue-600 text-center font-bold mt-5">
                 Sign Up
               </p>
             </div>
@@ -95,7 +100,9 @@ function Business() {
               <p className="leading-relaxed text-center">
                 You sell your product oe services to other Businesses
               </p>
-              <p className="text-blue-600 text-center font-bold mt-5">
+              <p 
+              onClick={BusinessHandler}
+               className="text-blue-600 text-center font-bold mt-5">
                 Sign Up
               </p>
             </div>
@@ -113,7 +120,9 @@ function Business() {
               <p className="leading-relaxed text-center">
                 You sell your product oe services to other Businesses
               </p>
-              <p className="text-blue-600 text-center font-bold mt-5">
+              <p
+              onClick={BusinessHandler}
+               className="text-blue-600 text-center font-bold mt-5">
                 Sign Up
               </p>
             </div>
@@ -131,7 +140,9 @@ function Business() {
               <p className="leading-relaxed text-center">
                 You sell your product oe services to other Businesses
               </p>
-              <p className="text-blue-600 text-center font-bold mt-5">
+              <p 
+              onClick={BusinessHandler}
+               className="text-blue-600 text-center font-bold mt-5">
                 Sign Up
               </p>
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Photography from '../../assets/photographyImage.png';
 import rectangle from '../../assets/Rectangle.png';
 
-function ImageComponent() {
+function ImageComponent({setCurrScreen}) {
   return (
     <div>
       <section class="text-gray-600 body-font mx-auto overflow-hidden">
@@ -102,7 +102,10 @@ function ImageComponent() {
         </div>
         <div className="flex  mt-8 m-auto justify-center ">
         
-        <button class="bg-blue-500  font-bold text-sm rounded-lg py-2 px-2 mr-8 hover:bg-blue-500 text-slate-50  flex items-center justify-center hover:text-white  border border-blue-500 hover:border-transparent ">
+        <button
+        onClick={() => {
+          setCurrScreen(4);
+        }} class="bg-blue-500  font-bold text-sm rounded-lg py-2 px-2 mr-8 hover:bg-blue-500 text-slate-50  flex items-center justify-center hover:text-white  border border-blue-500 hover:border-transparent ">
           Email these assets
         </button>
         <button class="bg-transparent  font-bold rounded-lg py-2 px-2 hover:bg-blue-500 text-blue-700 text-sm flex items-center justify-center hover:text-white   border border-blue-500 hover:border-transparent ">

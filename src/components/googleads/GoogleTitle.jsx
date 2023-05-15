@@ -3,11 +3,12 @@ import ButtonGroup from "../ButtonGroup";
 import ProgressBar from "../common/ProgressBar";
 import Ctas from "./Ctas";
 import Description from "./Description";
+import GoogleMailed from "./GoogleMailed";
 
 import Headlines from "./Headlines";
 import ImageComponent from "./ImageComponent";
 
-const Googleads = () => {
+const Googleads = ({setCurrScreen}) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <div className="w-[80%] flex flex-col h-screen rounded-lg bg-white mt-[2%]">
@@ -24,23 +25,24 @@ const Googleads = () => {
           selectedIndex={selectedIndex}
           setSelectedIndex={setSelectedIndex}
         />
-        <RenderComponent index={selectedIndex} />
+        <RenderComponent index={selectedIndex} setCurrScreen={setCurrScreen}/>
       </div>
     </div>
   );
 };
 export default Googleads;
 
-const RenderComponent = ({ index }) => {
+const RenderComponent = ({ index, setCurrScreen }) => {
   switch (index) {
     case 0:
-      return <Headlines/>;
+      return <Headlines setCurrScreen={setCurrScreen}/>;
     case 1:
-      return <Description/>;
+      return <Description setCurrScreen={setCurrScreen}/>;
     case 2:
-      return <ImageComponent/>;
+      return <ImageComponent setCurrScreen={setCurrScreen}/>;
     case 3:
-      return <Ctas />;
+      return <Ctas setCurrScreen={setCurrScreen}/>;
+    
 
     default:
       return <></>;

@@ -14,11 +14,11 @@ const BlogsMailed = () => {
         </h1>
       </div>
       <div className="h-auto w-auto mb-[-12%]">
-      <ProgressBar  percent={100}/>
+        <ProgressBar percent={100} />
       </div>
 
-      <div className=" m-auto items-center justify-center  w-[80%]">
-        <BlogsCentre  img={Blogs} />
+      <div className=" m-auto items-center justify-center  w-[65%]">
+        <BlogsCentre img={Blogs} />
         <div className="flex justify-center">
           <div className="p-2 px-4 bg-blue-600 mt-[-6%] self-center flex items-center justify-center  rounded-lg">
             <p className="text-white mr-2 text-xs">Blogs Topic</p>
@@ -27,15 +27,19 @@ const BlogsMailed = () => {
         </div>
         <div className="flex  mt-2 ">
           <div className="p-2 px-4 mx-2 bg-white border-blue-600 border-2 self-center flex items-center justify-center  rounded-lg">
-            <p className="text-blue-600 mr-2 text-xs">
+            <button className="text-blue-600 mr-2 text-xs">
               Generate Social Media post
-            </p>
+            </button>
           </div>
           <div className="p-2 px-4 mx-2 bg-white border-blue-600 border-2 self-center flex items-center justify-center  rounded-lg">
-            <p className="text-blue-600 mr-2 text-xs">Generate Keywords</p>
+            <button className="text-blue-600 mr-2 text-xs">
+              Generate Keywords
+            </button>
           </div>
           <div className="p-2 px-4 mx-2 bg-white border-blue-600 border-2 self-center flex items-center justify-center  rounded-lg">
-            <p className="text-blue-600  mr-2 text-xs">Generate ad copies</p>
+            <button className="text-blue-600  mr-2 text-xs">
+              Generate ad copies
+            </button>
           </div>
         </div>
       </div>

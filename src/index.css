@@ -97,3 +97,7 @@
   width: 100% !important;
   
 }
+
+#tooltip:hover #tooltip-btn{
+  background-color: red;
+}
