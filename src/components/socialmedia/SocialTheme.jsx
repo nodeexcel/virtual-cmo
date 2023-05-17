@@ -56,7 +56,7 @@ const SocialTheme = ({setSocialMedia}) => {
                 <h2 class="text-md font-medium title-font text-gray-900 mt-8">
                   Educational Posts
                 </h2>
-                <p class="text-xs bg-slate-200 rounded-lg text-left p-2 mt-2 min-h-[28%]">
+                <p class="text-xs bg-slate-200 rounded-lg text-left p-2 mt-2 min-h-[24%]">
                   Educational posts provide information or tips on a specific
                   topic or area of interest.
                 </p>
@@ -75,7 +75,7 @@ const SocialTheme = ({setSocialMedia}) => {
                 <h2 class="text-md font-medium title-font text-gray-900 mt-8">
                   Inspirational Posts
                 </h2>
-                <p class="text-xs rounded-lg p-2 text-left bg-slate-200 mt-2 min-h-[28%]">
+                <p class="text-xs rounded-lg p-2 text-left bg-slate-200 mt-2 min-h-[24%]">
                   Inspirational posts feature quotes or stories that inspire and
                   motivate your audience
                 </p>

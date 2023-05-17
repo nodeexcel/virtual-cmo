@@ -16,7 +16,7 @@ const group2 = [
   {
     name: "Images",
     toolTipName:
-      "Recommended sizes are Landscape (1200*628),Potrait(1200*1500),Square(1200*1200).",
+      "Recommended sizes are 300 * 250 pixels, 336*280 pixels,728 * 90 pixels",
     src: Hovericon,
   },
   {

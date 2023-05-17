@@ -63,7 +63,7 @@ const SocialPlatform = ({ setSocialMedia }) => {
       </div>
       <button
         onClick={() => setSocialMedia(2)}
-        class="bg-blue-600 m-auto rounded-lg font-bold hover:bg-blue-700 mt-8 text-slate-50 text-xs flex items-center justify-center hover:text-white py-2 px-6 ring-1 border border-blue-500 hover:border-transparent "
+        class="bg-blue-600 m-auto rounded-lg font-bold hover:bg-blue-700 mt-8 text-slate-50 text-xs flex items-center justify-center hover:text-white py-3 px-6 ring-1 border border-blue-500 hover:border-transparent "
       >
         Generate Content
       </button>

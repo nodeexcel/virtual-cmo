@@ -9,6 +9,8 @@ import Marketing from "../assets/Marketing.svg";
 import Performance from "../assets/Performance.svg";
 import logo7 from "../assets/Side.svg";
 import social from "../assets/Social.svg";
+import company from "../assets/Company.svg";
+
 
 const leftNavLogo = [
   { src: Marketing, href: "content-marketing", text: "Content Marketing" },
@@ -209,9 +211,12 @@ const MainLayout = () => {
         </div>
 
         <div className="w-96 bg-slate-50">
-          <h1 className="  flex justify-center text-center font-bold mt-[42%] ">
+          <div className="flex mt-[40%]">
+            <img className="h-6 mr-1 ml-2" src={company}/>
+          <h1 className="  flex justify-center text-center font-bold  ">
             Company Name
           </h1>
+          </div>
           <h1 className="flex justify-start text-center mt-[10%] font-bold text-blue-700 ml-[5%]">
             {" "}
             {currentNav}

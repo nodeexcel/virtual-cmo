@@ -10,8 +10,8 @@ const Topkeywords = ({ setCurrScreen }) => {
     <div className="w-[80%] h-screen flex flex-col rounded-lg bg-white mt-[2%]">
       <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
         <h1 className="text-black text-2xl  leading-9 text-left">
-          I have scanned through website and i can generate top keywords for
-          blogs, search ads, and social media.{" "}
+          I have scanned through website and I can generate top keywords for
+          blogs, search ads, and social media.
         </h1>
         
       </div>

@@ -8,7 +8,7 @@ const GoogleCopies = ({ setCurrScreen }) => {
   return (
     <div className="w-[80%] flex flex-col rounded-lg bg-white mt-[3%] overflow-hidden">
       <div className="w-[100%] h-[12%] p-5 rounded-t-lg  bg-blue-200 flex ">
-        <h1 className="text-black text-2xl font-medium leading-9 text-left">
+        <h1 className="text-black text-2xl px-5 py-5 leading-9 text-left">
           I have scanned through your website and I can generate copies for
           Google ads.
         </h1>
@@ -18,7 +18,7 @@ const GoogleCopies = ({ setCurrScreen }) => {
 
       <div className=" m-auto mt-[4%] h-screen items-center justify-center  w-[60%]">
         <h1 className="text-blue-700 font-bold text-md flex item-center justify-center  ">
-          Google ads
+          Google Ads
         </h1>
         <GoogleCentre img={Blogs} />
         <button

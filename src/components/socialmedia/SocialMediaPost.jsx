@@ -48,7 +48,7 @@ const SocialMediaPost = ({ setSocialMedia }) => {
           <img src={Store} />
         </div>
       </div>
-      <div className="flex justify-center m-auto mt-[-40%]">
+      <div className="flex justify-center  mt-[-40%]">
         <button
           onClick={() => setSocialMedia(5)}
           class="bg-blue-700 text-sm rounded-lg  mr-[8%] hover:bg-blue-500 text-slate-200 flex items-center justify-center hover:text-white py-1 px-4 ring-1 border border-blue-500 hover:border-transparent "

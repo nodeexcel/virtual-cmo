@@ -20,10 +20,10 @@ function Business() {
             What Business do you run ?
           </h1>
         </div>
-        <div className="flex flex-wrap justify-center text-center">
+        <div className="flex flex-wrap justify-center mt-[4%] text-center">
           {/* <Link to="/dashboard"> */}
-          <div className="sm:w-1/2 md:w-2/2 lg:w-1/3 xl:w-1/3 p-4 -mr-[12%]">
-            <div className="bg-gray-100 p-4 h-70 w-60 rounded-lg">
+          <div className="sm:w-1/2 md:w-2/2 lg:w-1/3 xl:w-1/3  p-4 -mr-[12%]">
+            <div className="bg-gray-100 p-2 h-75 w-60 rounded-lg">
               <img
                 className="h-20 w-40 mx-auto rounded object-cover object-center mb-6"
                 src={B2B}
@@ -32,12 +32,12 @@ function Business() {
               <h2 className="sm:text-2xl md:text-3xl lg:text-lg text-gray-900 text-center  font-medium title-font mb-4">
                 B2B
               </h2>
-              <p className="leading-relaxed text-center">
+              <p className="leading-relaxed text-xs  text-center">
                 You sell your product or services to other Businesses
               </p>
               <p
                 onClick={BusinessHandler}
-                className="text-blue-600 text-center font-bold mt-5"
+                className="text-blue-600 text-center font-bold mt-5 cursor-pointer "
               >
                 Sign Up
               </p>
@@ -45,7 +45,7 @@ function Business() {
           </div>
           {/* </Link> */}
           <div className="xl:w-1/3 md:w-1/2 -mr-[12%] p-4">
-            <div className="bg-gray-100 p-4 h-70 w-60 rounded-lg">
+            <div className="bg-gray-100 p-2 h-75 w-60 rounded-lg">
               <img
                 className="h-20 w-40 mx-auto rounded object-cover object-center mb-6"
                 src={B2C}
@@ -54,19 +54,19 @@ function Business() {
               <h2 className="text-lg text-gray-900 text-center font-medium title-font mb-4">
                 B2C
               </h2>
-              <p className="leading-relaxed text-center">
-                You sell your product oe services to other Businesses
+              <p className="leading-relaxed text-xs  text-center">
+                You sell your product or services to  consumers.
               </p>
               <p 
               onClick={BusinessHandler}
-              className="text-blue-600 text-center font-bold mt-5">
+              className="text-blue-600 text-center  font-bold mt-5 cursor-pointer ">
 
                 Sign Up
               </p>
             </div>
           </div>
           <div className="xl:w-1/3 md:w-1/2 -mr-[12%] p-4">
-            <div className="bg-gray-100 p-4 h-70 w-60 rounded-lg">
+            <div className="bg-gray-100 p-2 h-75 w-60 rounded-lg">
               <img
                 className="h-20 w-40 mx-auto rounded object-cover object-center mb-6"
                 src={Ecom}
@@ -75,12 +75,12 @@ function Business() {
               <h2 className="text-lg text-gray-900 text-center font-medium title-font  mb-4">
                 E-commerce
               </h2>
-              <p className="leading-relaxed text-center">
-                You sell your product oe services to other Businesses
+              <p className="leading-relaxed text-xs text-center">
+                You sell your product or services to on e-commerce sites or own website..
               </p>
               <p
               onClick={BusinessHandler}
-               className="text-blue-600 text-center font-bold mt-5">
+               className="text-blue-600 text-center font-bold mt-5 cursor-pointer">
                 Sign Up
               </p>
             </div>
@@ -88,7 +88,7 @@ function Business() {
         </div>
         <div className="flex flex-wrap justify-center text-center">
           <div className="xl:w-1/3 md:w-1/2 -mr-[12%] p-4">
-            <div className="bg-gray-100 p-4 h-70 w-60 rounded-lg">
+            <div className="bg-gray-100 p-2 h-75 w-60 rounded-lg">
               <img
                 className="h-20 w-40 mx-auto rounded object-cover object-center mb-6"
                 src={Content}
@@ -97,18 +97,18 @@ function Business() {
               <h2 className="text-lg text-gray-900 text-center font-medium title-font mb-4">
                 Content Creator
               </h2>
-              <p className="leading-relaxed text-center">
-                You sell your product oe services to other Businesses
+              <p className="leading-relaxed text-xs  text-center">
+                You create content for social media platforms like youtube and instagram.
               </p>
               <p 
               onClick={BusinessHandler}
-               className="text-blue-600 text-center font-bold mt-5">
+               className="text-blue-600 text-center font-bold mt-5 cursor-pointer">
                 Sign Up
               </p>
             </div>
           </div>
           <div className="xl:w-1/3 md:w-1/2 -mr-[12%] p-4">
-            <div className="bg-gray-100 p-4 h-70 w-60 rounded-lg">
+            <div className="bg-gray-100 p-2 h-75 w-60 rounded-lg">
               <img
                 className="h-20 w-40 mx-auto rounded object-cover object-center mb-6"
                 src={Freelancer}
@@ -117,18 +117,18 @@ function Business() {
               <h2 className="text-lg text-gray-900 text-center font-medium title-font mb-4">
                 Academician
               </h2>
-              <p className="leading-relaxed text-center">
-                You sell your product oe services to other Businesses
+              <p className="leading-relaxed text-xs text-center">
+                You run online or offline educational classes. 
               </p>
               <p
               onClick={BusinessHandler}
-               className="text-blue-600 text-center font-bold mt-5">
+               className="text-blue-600 text-center font-bold mt-5 cursor-pointer">
                 Sign Up
               </p>
             </div>
           </div>
           <div className="xl:w-1/3 md:w-1/2 -mr-[12%] p-4">
-            <div className="bg-gray-100 p-4 h-70 w-60 rounded-lg">
+            <div className="bg-gray-100 p-2 h-75 w-60 rounded-lg">
               <img
                 className="h-20 w-40 mx-auto rounded object-cover object-center mb-6"
                 src={Academic}
@@ -137,12 +137,12 @@ function Business() {
               <h2 className="text-lg text-gray-900 text-center font-medium title-font mb-4">
                 Freelancer
               </h2>
-              <p className="leading-relaxed text-center">
-                You sell your product oe services to other Businesses
+              <p className="leading-relaxed text-xs text-center">
+                You are self-employed individual who work on a project or hourly basis.
               </p>
               <p 
               onClick={BusinessHandler}
-               className="text-blue-600 text-center font-bold mt-5">
+               className="text-blue-600 text-center font-bold mt-5 cursor-pointer">
                 Sign Up
               </p>
             </div>

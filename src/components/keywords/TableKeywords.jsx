@@ -13,7 +13,7 @@ const TableKeywords = ({ setCurrScreen }) => {
 
       <div className=" mt-[4%] h-auto self-center w-[80%]">
         <div class="relative overflow-x-auto shadow-md">
-          <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <table class="w-full text-sm text-left text-gray-500">
             <thead class="text-md  bg-blue-500 text-slate-50">
               <tr>
                 <th
@@ -28,110 +28,110 @@ const TableKeywords = ({ setCurrScreen }) => {
                 >
                   Ranking
                 </th>
-                <th scope="col" class="px-6 py-2">
-                  CTR
+                <th scope="col" class="px-3 text-lg font-bold py-2">
+                  Search Volume
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-white  dark:bg-blue-200 text-black dark:border-gray-700">
+              <tr class=" bg-blue-200 text-black dark:border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-2 border-r dark:border-gray-700 font-medium text-black whitespace-nowrap"
+                  class="px-6 py-2 border-r border-gray-700 font-medium text-black whitespace-nowrap"
                 >
                   Porem
                 </th>
-                <td class="px-6 py-2 border-r dark:border-gray-700">#1</td>
+                <td class="px-6 py-2 border-r border-gray-700">#1</td>
                 <td class="px-6 py-2">CTR</td>
               </tr>
               <tr class=" text-black ">
                 <th
                   scope="row"
-                  class="px-6 py-2 border-r dark:border-gray-700 font-medium text-black whitespace-nowrap"
+                  class="px-6 py-2 border-r border-gray-700 font-medium text-black whitespace-nowrap"
                 >
                   Yorem
                 </th>
-                <td class="px-6 py-2 border-r dark:border-gray-700">#2</td>
+                <td class="px-6 py-2 border-r border-gray-700">#2</td>
                 <td class="px-6 py-2">CTR</td>
               </tr>
-              <tr class="bg-white  dark:bg-blue-200 text-black dark:border-gray-700">
+              <tr class="bg-blue-200 text-black border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-2 border-r dark:border-gray-700 font-medium text-black whitespace-nowrap"
+                  class="px-6 py-2 border-r border-gray-700 font-medium text-black whitespace-nowrap"
                 >
                   Qorem
                 </th>
-                <td class="px-6 py-2 border-r dark:border-gray-700">#3</td>
+                <td class="px-6 py-2 border-r border-gray-700">#3</td>
                 <td class="px-6 py-2">CTR</td>
               </tr>
               <tr class=" text-black ">
                 <th
                   scope="row"
-                  class="px-6 py-2 border-r dark:border-gray-700  font-medium text-black whitespace-nowrap"
+                  class="px-6 py-2 border-r border-gray-700  font-medium text-black whitespace-nowrap"
                 >
                   Yorem
                 </th>
-                <td class="px-6 py-2 border-r dark:border-gray-700">#4</td>
+                <td class="px-6 py-2 border-r border-gray-700">#4</td>
                 <td class="px-6 py-2">CTR</td>
               </tr>
-              <tr class="bg-white  dark:bg-blue-200 text-black dark:border-gray-700">
+              <tr class="  bg-blue-200 text-black border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-2 border-r dark:border-gray-700 font-medium text-black whitespace-nowrap"
+                  class="px-6 py-2 border-r border-gray-700 font-medium text-black whitespace-nowrap"
                 >
                   Qorem
                 </th>
-                <td class="px-6 py-2 border-r dark:border-gray-700">#5</td>
+                <td class="px-6 py-2 border-r border-gray-700">#5</td>
                 <td class="px-6 py-2">CTR</td>
               </tr>
               <tr class="border-b text-black ">
                 <th
                   scope="row"
-                  class="px-6 py-2 border-r dark:border-gray-700 font-medium text-black whitespace-nowrap"
+                  class="px-6 py-2 border-r border-gray-700 font-medium text-black whitespace-nowrap"
                 >
                   Yorem
                 </th>
-                <td class="px-6 py-2 border-r dark:border-gray-700">Ranking</td>
+                <td class="px-6 py-2 border-r border-gray-700">Ranking</td>
                 <td class="px-6 py-2">CTR</td>
               </tr>
-              <tr class="bg-white  dark:bg-blue-200 text-black dark:border-gray-700">
+              <tr class=" bg-blue-200 text-black border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-2 border-r dark:border-gray-700 font-medium text-black whitespace-nowrap"
+                  class="px-6 py-2 border-r border-gray-700 font-medium text-black whitespace-nowrap"
                 >
                   Qorem
                 </th>
-                <td class="px-6 py-2 border-r dark:border-gray-700">Ranking</td>
+                <td class="px-6 py-2 border-r border-gray-700">Ranking</td>
                 <td class="px-6 py-2">CTR</td>
               </tr>
               <tr class="border-b text-black  ">
                 <th
                   scope="row"
-                  class="px-6 py-2 border-r dark:border-gray-700 font-medium text-black whitespace-nowrap"
+                  class="px-6 py-2 border-r border-gray-700 font-medium text-black whitespace-nowrap"
                 >
                   Yorem
                 </th>
-                <td class="px-6 py-2 border-r dark:border-gray-700">Ranking</td>
+                <td class="px-6 py-2 border-r border-gray-700">Ranking</td>
                 <td class="px-6 py-2">CTR</td>
               </tr>
-              <tr class="bg-white  dark:bg-blue-200 text-black dark:border-gray-700">
+              <tr class="  bg-blue-200 text-black border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-2 border-r dark:border-gray-700 font-medium text-black whitespace-nowrap"
+                  class="px-6 py-2 border-r border-gray-700 font-medium text-black whitespace-nowrap"
                 >
                   Qorem
                 </th>
-                <td class="px-6 py-2 border-r dark:border-gray-700">Ranking</td>
+                <td class="px-6 py-2 border-r border-gray-700">Ranking</td>
                 <td class="px-6 py-2">CTR</td>
               </tr>
               <tr class="border-b text-black ">
                 <th
                   scope="row"
-                  class="px-6 py-2 border-r dark:border-gray-700 font-medium text-black whitespace-nowrap"
+                  class="px-6 py-2 border-r border-gray-700 font-medium text-black whitespace-nowrap"
                 >
                   Yorem
                 </th>
-                <td class="px-6 py-2 border-r dark:border-gray-700">Ranking</td>
+                <td class="px-6 py-2 border-r border-gray-700">Ranking</td>
                 <td class="px-6 py-2">CTR</td>
               </tr>
             </tbody>

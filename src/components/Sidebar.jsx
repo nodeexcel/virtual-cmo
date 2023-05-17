@@ -33,6 +33,7 @@ const Sidebar = () => {
             </div>
 
             <div className="w-64  bg-slate-50">
+              <div></div>
               <h1 className="  flex justify-center text-center font-bold mt-[42%] ">
                 Company Name
               </h1>
