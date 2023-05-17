@@ -20,7 +20,7 @@ function BlogsPage() {
     case 5:
     return <BlogsReady setCurrScreen={setCurrScreen}/>
     case 6:
-      return <BlogsMailed />;
+      return <BlogsMailed setCurrScreen={setCurrScreen} />;
     default:
       return <BlogsLoader />;
   }

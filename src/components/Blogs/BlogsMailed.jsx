@@ -4,8 +4,10 @@ import { BlogsCentre } from "./Blogs";
 import Blogs from "../../assets/Blogs.svg";
 import ArrowRight from "../../assets/ArrowRight.svg";
 import ProgressBar from "../common/ProgressBar";
+import { useNavigate } from "react-router-dom";
 
-const BlogsMailed = () => {
+const BlogsMailed = ({setCurrScreen}) => {
+  
   return (
     <div className="w-[80%] flex flex-col h-screen  rounded-lg bg-white mt-[1%] overflow-hidden">
       <div className="w-[100%] h-[12%] p-5 rounded-t-lg  bg-blue-200 flex ">
@@ -21,7 +23,7 @@ const BlogsMailed = () => {
         <BlogsCentre img={Blogs} />
         <div className="flex justify-center">
           <div className="p-2 px-4 bg-blue-600 mt-[-6%] self-center flex items-center justify-center  rounded-lg">
-            <p className="text-white mr-2 text-xs">Blog Topic</p>
+            <p className="text-white mr-2 text-xs cursor-pointer" onClick={() => setCurrScreen(1)}>Blog Topic</p>
             <img src={ArrowRight} height={15} width={15} />
           </div>
         </div>
