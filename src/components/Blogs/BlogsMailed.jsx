@@ -26,7 +26,7 @@ const BlogsMailed = () => {
           </div>
         </div>
         <div className="flex  mt-2 ">
-          <div className="p-2 px-4 mx-2 bg-white border-blue-600 border-2 self-center flex items-center justify-center  rounded-lg">
+          <div className="p-2 px-4 mx-2  bg-white border-blue-600 border-2 self-center flex items-center justify-center  rounded-lg">
             <button className="text-blue-600 mr-2 text-xs">
               Generate Social Media post
             </button>
