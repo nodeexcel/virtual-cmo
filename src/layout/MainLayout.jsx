@@ -211,9 +211,9 @@ const MainLayout = () => {
         </div>
 
         <div className="w-96 bg-slate-50">
-          <div className="flex mt-[40%]">
-            <img className="h-6 mr-1 ml-2" src={company}/>
-          <h1 className="  flex justify-center text-center font-bold  ">
+          <div className="flex mt-[38%]">
+            <img className="h-9 mr-3 ml-4" src={company}/>
+          <h1 className="  flex justify-center mt-1 text-center font-bold  ">
             Company Name
           </h1>
           </div>

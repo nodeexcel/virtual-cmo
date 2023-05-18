@@ -55,7 +55,7 @@ function Business() {
                 B2C
               </h2>
               <p className="leading-relaxed text-xs  text-center">
-                You sell your product or services to  consumers.
+                You sell your product or services to  consumers
               </p>
               <p 
               onClick={BusinessHandler}
@@ -76,7 +76,7 @@ function Business() {
                 E-commerce
               </h2>
               <p className="leading-relaxed text-xs text-center">
-                You sell your product or services to on e-commerce sites or own website..
+                You sell your product or services on e-commerce sites or own website
               </p>
               <p
               onClick={BusinessHandler}
@@ -98,7 +98,7 @@ function Business() {
                 Content Creator
               </h2>
               <p className="leading-relaxed text-xs  text-center">
-                You create content for social media platforms like youtube and instagram.
+                You create content for social media platforms like Youtube and Instagram
               </p>
               <p 
               onClick={BusinessHandler}
@@ -118,7 +118,7 @@ function Business() {
                 Academician
               </h2>
               <p className="leading-relaxed text-xs text-center">
-                You run online or offline educational classes. 
+                You run online or offline educational classes
               </p>
               <p
               onClick={BusinessHandler}
@@ -138,7 +138,7 @@ function Business() {
                 Freelancer
               </h2>
               <p className="leading-relaxed text-xs text-center">
-                You are self-employed individual who work on a project or hourly basis.
+                You are self-employed individual who works on a project or hourly basis
               </p>
               <p 
               onClick={BusinessHandler}

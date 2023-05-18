@@ -63,9 +63,20 @@ const SocialPlatform = ({ setSocialMedia }) => {
       </div>
       <button
         onClick={() => setSocialMedia(2)}
-        class="bg-blue-600 m-auto rounded-lg font-bold hover:bg-blue-700 mt-8 text-slate-50 text-xs flex items-center justify-center hover:text-white py-3 px-6 ring-1 border border-blue-500 hover:border-transparent "
+        class="bg-blue-500 m-auto rounded-lg  hover:bg-blue-700 mt-8 text-slate-50 text-md flex items-center justify-center hover:text-white py-2 px-4 ring-1 border border-blue-500 hover:border-transparent "
       >
         Generate Content
+        <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
       </button>
     </div>
   );

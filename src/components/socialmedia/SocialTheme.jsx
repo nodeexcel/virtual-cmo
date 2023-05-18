@@ -17,7 +17,7 @@ const SocialTheme = ({setSocialMedia}) => {
 
       <div className=" m-auto mt-[2%] h-screen items-center justify-center  w-[90%]">
         <p className=" m-auto text-xl text-gray-600 justify-center item-center py-2 px-4 ">
-          Select Themes for your Posts.
+          Select Themes for your posts.
         </p>
         <section class="text-gray-600 body-font mt-[-6%]">
           <div class="container px-5 py-24 ">
@@ -36,7 +36,7 @@ const SocialTheme = ({setSocialMedia}) => {
                 <h2 class="text-md font-medium title-font text-gray-900 mt-5">
                   Promotional Posts
                 </h2>
-                <p class="text-xs rounded-lg bg-slate-200 text-left p-2 mt-2 max-h-[30%]">
+                <p class="text-xs rounded-lg bg-slate-200 text-left p-2 mt-2 min-h-[24%]">
                   These posts promote a product or service and encourage users
                   to take action, such as making a purchase or signing up for a
                   newsletter.
@@ -56,7 +56,7 @@ const SocialTheme = ({setSocialMedia}) => {
                 <h2 class="text-md font-medium title-font text-gray-900 mt-8">
                   Educational Posts
                 </h2>
-                <p class="text-xs bg-slate-200 rounded-lg text-left p-2 mt-2 min-h-[24%]">
+                <p class="text-xs bg-slate-200 rounded-lg text-left p-2 mt-2 min-h-[25%]">
                   Educational posts provide information or tips on a specific
                   topic or area of interest.
                 </p>
@@ -75,7 +75,7 @@ const SocialTheme = ({setSocialMedia}) => {
                 <h2 class="text-md font-medium title-font text-gray-900 mt-8">
                   Inspirational Posts
                 </h2>
-                <p class="text-xs rounded-lg p-2 text-left bg-slate-200 mt-2 min-h-[24%]">
+                <p class="text-xs rounded-lg p-2 text-left bg-slate-200 mt-2 min-h-[25%]">
                   Inspirational posts feature quotes or stories that inspire and
                   motivate your audience
                 </p>

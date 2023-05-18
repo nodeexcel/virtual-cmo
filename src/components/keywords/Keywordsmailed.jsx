@@ -8,18 +8,18 @@ import ProgressBar from "../common/ProgressBar";
 const KeywordsMailed = () => {
   return (
     <div className="w-[80%] flex flex-col h-screen  rounded-lg bg-white mt-[2%] overflow-hidden">
-      <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
-        <h1 className="text-black text-2xl font-medium leading-9 text-left">
-          I have emailed the social media posts.
+      <div className="w-[100%] h-[15%] px-8 py-8 rounded-t-lg  bg-blue-200 flex ">
+        <h1 className="text-black text-2xl  leading-9 text-left">
+          I have emailed the keyword list.
         </h1>
       </div>
       <ProgressBar percent={100}/>
 
-      <div className=" m-auto min-h-screen items-center justify-center mt-[-2%]  w-[65%]">
+      <div className=" m-auto  items-center justify-center mt-[-2%]  w-[65%]">
         <KeywordsCentre  img={Blogs}  />
         <div className="flex justify-center">
-          <div className="p-2 px-4 mt-[-4%] bg-blue-600 self-center flex items-center justify-center  rounded-lg">
-            <p className="text-white  text-xs">Blogs Topic</p>
+          <div className="py-3 px-4 mt-[-4%] bg-blue-600 self-center flex items-center justify-center  rounded-lg">
+            <p className="text-white  text-xs">Go to Keywords</p>
             <img src={ArrowRight} height={15} width={15} />
           </div>
         </div>

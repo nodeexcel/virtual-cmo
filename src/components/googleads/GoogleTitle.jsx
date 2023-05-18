@@ -13,7 +13,7 @@ const Googleads = ({setCurrScreen}) => {
   return (
     <div className="w-[80%] flex flex-col h-screen rounded-lg bg-white mt-[2%]">
       <div className="w-[100%] h-[14%] p-5 rounded-lg  items-center  bg-blue-200 flex ">
-        <h1 className="text-black text-2xl font-medium  leading-9 text-left ml-[3%]">
+        <h1 className="text-black text-2xl    text-left ml-[3%]">
           Here you go, here are some Ad copies that we can use !
         </h1>
       </div>

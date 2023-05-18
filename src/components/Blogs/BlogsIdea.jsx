@@ -25,7 +25,7 @@ const BlogsIdea = ({ setCurrScreen }) => {
         <div className="bg-slate-200 h-3 rounded-lg mt-2">
         </div>
         <p className="bg-transparent m-auto rounded-lg text-blue-700 font-semibold flex items-center justify-center py-2 px-4   hover:border-transparent ">
-          Working on some blogs ideas
+          Working on some blog ideas
         </p>
       </div>
     </div>

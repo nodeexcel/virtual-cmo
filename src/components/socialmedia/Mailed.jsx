@@ -17,7 +17,18 @@ const SocialMail = () => {
        
         <SocialCentre img={Blogs} />
         <button class=" m-auto rounded-lg bg-blue-500 text-slate-50 font-semibold flex items-center justify-center hover:text-white py-2 px-4 ring-1 border border-blue-500 hover:border-transparent ">
-          Go to Google Ads
+         Go to Google ads
+         <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
         </button>
         </div>
         <div className="flex justify-between mt-3 ">

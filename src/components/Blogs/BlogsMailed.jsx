@@ -23,7 +23,7 @@ const BlogsMailed = ({setCurrScreen}) => {
         <BlogsCentre img={Blogs} />
         <div className="flex justify-center">
           <div className="p-2 px-4 bg-blue-600 mt-[-6%] self-center flex items-center justify-center  rounded-lg">
-            <p className="text-white mr-2 text-xs cursor-pointer" onClick={() => setCurrScreen(1)}>Blog Topic</p>
+            <p className="text-white mr-2 text-xs p-1 px-2 mx-2 cursor-pointer" onClick={() => setCurrScreen(1)}>Blog Topic</p>
             <img src={ArrowRight} height={15} width={15} />
           </div>
         </div>
