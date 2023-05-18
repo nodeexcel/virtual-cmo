@@ -8,7 +8,7 @@ const Blogstube = ({ setCurrScreen }) => {
   return (
     <div className=" w-[80%] h-screen flex flex-col rounded-lg bg-white mt-[2%] overflow-hidden ">
       <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
-        <h1 className="text-black px-5 py-5 text-2xl font-medium leading-9 text-left">
+        <h1 className="text-black px-5 py-5 text-2xl  leading-9 text-left">
         Here are some blog topics that I can write about!
         </h1>
       </div>

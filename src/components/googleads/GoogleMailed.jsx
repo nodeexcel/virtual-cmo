@@ -12,9 +12,24 @@ const GoogleMailed = () => {
       </div>
 
       <ProgressBar percent={100} />
+      
 
       <div className=" m-auto  h-auto items-center justify-center  w-[60%]">
         <GoogleCentre img={Blogs} />
+        <button class=" m-auto rounded-lg bg-blue-500 text-slate-50  flex items-center justify-center hover:text-white py-1 px-4 ring-1 border border-blue-500 hover:border-transparent ">
+         Go to Google ads
+         <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
         </div>
         <div className="flex  mt-2 justify-center">
           <div className="p-2 px-4 mx-2 bg-white border-blue-600 border-2 self-center flex items-center justify-center  rounded-lg">

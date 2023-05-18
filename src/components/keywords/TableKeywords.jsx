@@ -4,8 +4,8 @@ import ProgressBar from "../common/ProgressBar";
 const TableKeywords = ({ setCurrScreen }) => {
   return (
     <div className="w-[80%] flex flex-col h-screen rounded-lg bg-white mt-[2%] overflow-hidden">
-      <div className="w-[100%] h-[15%] p-5 rounded-t-lg  bg-blue-200 flex ">
-        <h1 className="text-black text-2xl font-medium leading-9 text-left">
+      <div className="w-[100%] h-[15%] py-8 px-8 rounded-t-lg  bg-blue-200 flex ">
+        <h1 className="text-black text-2xl  leading-9 text-left">
           Here you go, here are the top keywords for your business!
         </h1>
       </div>
@@ -143,10 +143,10 @@ const TableKeywords = ({ setCurrScreen }) => {
           onClick={() => setCurrScreen(4)}
           class="bg-blue-500  rounded-lg py-2 px-2 mr-4 hover:bg-blue-500 text-slate-50 text-sm  hover:text-white  border border-blue-500 hover:border-transparent "
         >
-          Email this Sheet
+          Email this sheet
         </button>
         <button class="bg-transparent  rounded-lg py-2 px-2 hover:bg-blue-500 text-blue-700 text-sm flex  hover:text-white   border border-blue-500 hover:border-transparent ">
-          Setup on google ads
+          Setup on Google Ads
         </button>
       </div>
     </div>

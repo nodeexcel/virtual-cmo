@@ -10,7 +10,7 @@ import ProgressBar from "../common/ProgressBar";
 const SocialPlatform = ({ setSocialMedia }) => {
   return (
     <div className="w-[80%] m-auto h-screen mt-[2%] bg-slate-50 ">
-      <div className="w-[100%] h-[12%] mt-[1%] px-8 py-8 text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
+      <div className="w-[100%] h-[13%] text-xl mt-[1%] px-8 py-8 text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
         I can create social media content for your business!
       </div>
       <ProgressBar percent={10} />

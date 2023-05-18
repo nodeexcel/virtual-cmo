@@ -12,7 +12,7 @@ const SocialContent = ({setSocialMedia}) => {
   }, []);
   return (
     <div className="w-[65%] m-auto h-screen mt-[2%] bg-slate-50 ">
-       <div className="w-[100%] h-[12%] mt-[1%] px-8 py-8 text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
+       <div className="w-[100%] h-[15%] text-xl mt-[1%] px-8 py-8 text-md  m-auto border-1 rounded-lg text-centre bg-blue-200 text-black flex ">
        Creating social media posts on the basis of themes selected
       </div>
       <ProgressBar percent={60} />
