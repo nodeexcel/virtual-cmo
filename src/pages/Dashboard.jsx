@@ -17,24 +17,24 @@ const Dashboard = () => {
           </h1>
         </div>
         <div className="flex flex-row flex-wrap mt-10 items-center justify-center self-center">
-          <div className="border-1 w-[50%] flex flex-col items-center justify-between mb-6 h-72  ">
+          <div className="border-1 w-[50%] flex flex-col items-center justify-between mb-4 h-72  ">
             <h1 className="font-bold text-base text-blue-700 mb-2">Blogs</h1>
             <img src={BlogsImage} alt={"BlogsImage"} height={180} width={180}/>
             <button className=" border-2 rounded-2xl py-3 px-9 border-blue-700 font-semibold mt-5 text-blue-700 text-xs ">Generate</button>
           </div>
-          <div className="border-1 w-[50%] flex flex-col items-center justify-between mb-6 h-72 ">
+          <div className="border-1 w-[50%] flex flex-col items-center justify-between mb-4 h-72 ">
             <h1 className="font-bold text-base text-blue-700">Social Media Content </h1>
             <img src={SocialImage} alt={"SocialImage"} height={180} width={180}/>
             <button className=" border-2  rounded-2xl py-3 px-9 border-blue-700 font-semibold text-blue-700 text-xs ">Generate</button>
           </div>
           </div>
           <div className="flex">
-          <div className="border-1 w-[50%] flex flex-col items-center justify-between mb-6 h-72 ">
+          <div className="border-1 w-[50%] flex flex-col items-center justify-between mb-4 h-72 ">
             <h1 className="font-bold text-base mt-[-1%] text-blue-700">Keywords</h1>
             <img src={KeywordsImage} alt={"KeywordsImage"} height={180} width={180}/>
             <button className=" border-2 rounded-2xl py-3 px-9 border-blue-700 mt-1 font-semibold text-blue-700 text-xs ">Generate</button>
           </div>
-          <div className="border-1 w-[50%] flex flex-col items-center justify-between mb-6 h-72 ">
+          <div className="border-1 w-[50%] flex flex-col items-center justify-between mb-4 h-72 ">
             <h1 className="font-bold text-base text-blue-700 mb-4">Ad copies</h1>
             <img src={AdCopiesImage} alt={"AdCopiesImage"} height={180} width={180}/>
             <button className=" border-2 mt-2 rounded-2xl py-3 px-9 border-blue-700 font-semibold text-blue-700 text-xs ">Generate</button>
