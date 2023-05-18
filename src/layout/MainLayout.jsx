@@ -211,8 +211,8 @@ const MainLayout = () => {
         </div>
 
         <div className="w-96 bg-slate-50">
-          <div className="flex mt-[38%]">
-            <img className="h-9 mr-3 ml-4" src={company}/>
+          <div className="flex mt-[40%]">
+            <img className="h-7 mr-3 ml-4" src={company}/>
           <h1 className="  flex justify-center mt-1 text-center font-bold  ">
             Company Name
           </h1>
@@ -228,7 +228,7 @@ const MainLayout = () => {
                 setNavOptions={setNavOptions}
                 currentNav={currentNav}
               />
-              <div className="fixed top-0 left-4  ml-[5%]  mt-[45%]">
+              <div className="fixed top-[75%] left-4  ml-[5%]  ">
                 <h2 className="text-md item-center flex  text-center py-2">
                   Current Plan
                 </h2>
