@@ -244,7 +244,7 @@ const MainLayout = () => {
                 setNavOptions={setNavOptions}
                 currentNav={currentNav}
               />
-              <div className="fixed top-[75%] left-4  ml-[5%]  ">
+              <div className="  ml-[5%] mt-[20%] h-screen ">
                 <h2 className="text-md item-center flex  text-center py-2">
                   Current Plan
                 </h2>
