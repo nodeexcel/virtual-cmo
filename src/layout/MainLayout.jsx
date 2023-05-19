@@ -175,19 +175,34 @@ const MainLayout = () => {
   };
   const [navOptions, setNavOptions] = useState(leftNav);
   const [currentNav, setCureentNav] = useState("Dashboard");
+
+  // const handleLogoClick = () => {
+  //   navigate("/");
+  //   setCureentNav("Dashboard");
+  //   setNavOptions(leftNav);
+  // };
+
+  // const handleNavOptionClick = (data) => {
+  //   setCureentNav(data.text); // Update the currentNav state to the clicked data.text
+  //   setNavOptions(routes[data.href]); // Update the navOptions based on the routes data
+  //   navigate(`/${data.href}`); // Navigate to the corresponding URL
+  // };
   return (
     <div className="flex flex-col h-screen w-screen">
       <div className="flex flex-1">
         <div className="flex justify-center text-center item-center">
           <div className="bg-blue-500 w-16  ">
             <img
-              className="mb-[270%]"
+              className="mb-[271%] "
               src={logo}
               onClick={() => {
+                
                 navigate("/");
-                setCureentNav("Dashboard");
-                setNavOptions(leftNav);
+                setCureentNav(data.text);
+                setNavOptions(routes[data.href]);
+               
               }}
+              
             />
             {leftNavLogo.map((data, index) => {
               return (
@@ -203,6 +218,7 @@ const MainLayout = () => {
                     }
                     setCureentNav(data.text);
                   }}
+                 
                   key={index}
                 />
               );

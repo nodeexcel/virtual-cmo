@@ -15,13 +15,16 @@ const SocialTheme = ({setSocialMedia}) => {
     </div>
     <div>
     <ProgressBar percent={30} />
-    <p className=" m-auto text-xl text-gray-600 justify-center item-center py-2 px-4 ">
+    
+      </div>
+      <div>
+      <p className=" m-auto  text-xl text-gray-600 justify-center  ">
         Select Themes for your posts.
       </p>
       </div>
     <div className=" m-auto   items-center justify-center  w-[90%]">
      
-      <section class="text-gray-600 body-font mt-[-6%] overflow-y-scroll h-[460px]">
+      <section class="text-gray-600 body-font  overflow-y-scroll h-[460px]">
         <div class="container px-5 py-24 ">
           <div class="flex flex-col">
             

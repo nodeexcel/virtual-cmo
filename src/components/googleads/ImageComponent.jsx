@@ -5,7 +5,7 @@ import rectangle from '../../assets/Rectangle.png';
 function ImageComponent({setCurrScreen}) {
   return (
     <div>
-      <section class="text-gray-600 body-font mx-auto overflow-hidden">
+      <section class="text-gray-600 body-font mx-auto overflow-y-scroll h-[70%] overflow-hidden">
         <div class=" container mt-[1%] px-5 py-4 mx-auto">
           <div class="flex flex-col"></div>
           <div class="flex flex-wrap justify-center  sm:-m-4 -mx-4 -mb-10 -mt-4">
@@ -72,6 +72,12 @@ function ImageComponent({setCurrScreen}) {
                   src={rectangle}
                 />
               </div>
+              <h2 class="text-md font-medium title-font text-gray-900 mt-2">
+                Photography
+              </h2>
+              <p class="text-xs  bg-slate-200  leading-relaxed mt-1">
+               image size 1200 * 628
+              </p>
               
             </div>
             <div class="p-1 border-4 mr-[1%] rounded-lg md:w-[30%] sm:mb-0 mb-6">
@@ -83,6 +89,12 @@ function ImageComponent({setCurrScreen}) {
                   
                 />
               </div>
+              <h2 class="text-md font-medium title-font text-gray-900 mt-2">
+              Photography
+              </h2>
+              <p class="text-xs  bg-slate-200   leading-relaxed mt-1">
+              image size 1200 * 1500
+              </p>
               
              
             </div>
@@ -95,12 +107,20 @@ function ImageComponent({setCurrScreen}) {
                 />
               </div>
               
-              
+              <h2 class="text-md font-medium title-font text-gray-900 mt-2">
+              Photography
+              </h2>
+              <p class="text-xs  bg-slate-200   leading-relaxed mt-1 ">
+              image size 1200 * 1200
+              </p>
             </div>
           </div>
           
         </div>
-        <div className="flex  mt-8 m-auto justify-center ">
+        
+
+      </section>
+      <div className="flex  mt-8 m-auto justify-center ">
         
         <button
         onClick={() => {
@@ -113,8 +133,6 @@ function ImageComponent({setCurrScreen}) {
 
         </button>
         </div> 
-
-      </section>
     </div>
   )
 }
