@@ -4,6 +4,10 @@ import { SocialCentre } from "./SocialMedia";
 import Grocary from "../../assets/Grocery.png";
 import Educational from "../../assets/Educational.png";
 import Inspiration from "../../assets/Inspiration.png";
+import Entertainment from "../../assets/Entertainment.png";
+import Seasonal from "../../assets/Seasonal.png";
+import Trending from "../../assets/Trending.png";
+
 
 import ProgressBar from "../common/ProgressBar";
 
@@ -96,11 +100,11 @@ const SocialTheme = ({setSocialMedia}) => {
                 <img
                   alt="content"
                   class="object-cover object-center h-auto w-auto"
-                  src={Grocary}
+                  src={Seasonal}
                 />
               </div>
               <h2 class="text-md font-medium title-font text-gray-900 mt-5">
-                Promotional Posts
+                Seasonal posts
               </h2>
               <p class="text-xs rounded-lg bg-slate-200 text-left p-2 mt-2 min-h-[24%]">
                 These posts promote a product or service and encourage users
@@ -116,11 +120,11 @@ const SocialTheme = ({setSocialMedia}) => {
                 <img
                   alt="content"
                   class="object-cover object-center h-auto w-auto"
-                  src={Educational}
+                  src={Trending}
                 />
               </div>
               <h2 class="text-md font-medium title-font text-gray-900 mt-8">
-                Educational Posts
+                Trending Topics
               </h2>
               <p class="text-xs bg-slate-200 rounded-lg text-left p-2 mt-2 min-h-[29%]">
                 Educational posts provide information or tips on a specific
@@ -135,11 +139,11 @@ const SocialTheme = ({setSocialMedia}) => {
                 <img
                   alt="content"
                   class="object-cover object-center h-auto w-auto"
-                  src={Inspiration}
+                  src={Entertainment}
                 />
               </div>
               <h2 class="text-md font-medium title-font text-gray-900 mt-8">
-                Inspirational Posts
+                Entertaining posts
               </h2>
               <p class="text-xs rounded-lg p-2 text-left bg-slate-200 mt-2 min-h-[29%]">
                 Inspirational posts feature quotes or stories that inspire and
